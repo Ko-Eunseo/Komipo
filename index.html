@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komipo</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./library/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+<!-- https://www.komipo.kr/ -->
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="./images/icon/logoKomipo.svg" alt="logo">
+        <h1>Komipo</h1>
+      </a>
+    </div>
+    <div class="headerIcon">
+      <div class="search">
+        <label for="search">
+          <input type="text"><i class="fas fa-search"></i>
+        </label>
+      </div>
+      <div id="gnbBox">
+        <span class="close" onclick="openNcloseNav()"><i class="fas fa-times"></i></span>
+        <nav class="gnb">
+          <ul>
+            <li><a href="" onclick="openMenu()">회사소개</a>
+              <ul>
+                <li><a href="">회사소개</a></li>
+                <li><a href="">회사소개</a></li>
+                <li><a href="">회사소개</a></li>
+              </ul>
+            </li>
+            <li><a href="" onclick="openMenu()">사업분야</a>
+              <ul>
+                <li><a href="">사업분야</a></li>
+                <li><a href="">사업분야</a></li>
+                <li><a href="">사업분야</a></li>
+              </ul>
+            </li>
+            <li><a href="" onclick="openMenu()">사업소현황</a>
+              <ul>
+                <li><a href="" onclick="openMenu()">사업소현황</a></li>
+                <li><a href="" onclick="openMenu()">사업소현황</a></li>
+                <li><a href="" onclick="openMenu()">사업소현황</a></li>
+              </ul>
+            </li>
+            <li><a href="">알림마당</a>
+              <ul>
+                <li><a href="">알림마당</a></li>
+                <li><a href="">알림마당</a></li>
+                <li><a href="">알림마당</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <span class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></span>
+      </div>
+  </header>
+  <main>
+    <div>
+      <h1>KOMIPO<br/>
+      SERVICE</h1>
+      <p>삶의 가치를 높이는 글로벌 에너지 리더 다양한 지원업무를</p>
+      <p>통하여 에너지 산업을 선도하겠습니다.</p>
+    </div>
+  </main>
+  <script src="js/common.js"></script>
+</body>
+</html>
