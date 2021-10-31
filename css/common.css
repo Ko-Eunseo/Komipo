@@ -204,16 +204,14 @@ section div > p {
   /* opacity after, background로 먹이기 */
   background-color: #5D8B70;
 }
-
-/* service contents */
-div.serviceImg {
-  position: absolute;
-  left: 0;
-  display: flex;
-  /* flex-direction: column; */
-  padding-top: 55px;
+.slide-container {
+  overflow: hidden;
 }
-/* horizontal-scroll */
-div.scroll {
-  width: 720px;
+.container {
+  width: 500vw;
+  transition: transform .5s;
+}
+.item {
+  width: 100vw;
+  float: left;
 }
