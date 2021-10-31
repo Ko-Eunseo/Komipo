@@ -189,12 +189,12 @@ h2 {
 
 /* contents layout */
 section > div {
-margin-left: 50px;
+margin: 0 50px;
 position: relative;
 }
 section > div:nth-child(even) > div.layout {
   position: absolute;
-  right: 50px;
+  right: 0;
 }
 
 section div > p {
@@ -215,3 +215,30 @@ section div > p {
   width: 100vw;
   float: left;
 }
+/* second section hire */
+#hire {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#hire > div {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#hire > .hireWrap > div > i:hover {
+  color: #5D8B70;
+}
+
+#hire i,
+#hire h3 {
+  color: #00414B;
+}
+
+#hire h2,
+#hire h3 {
+  padding: 20px 0;
+}
+
