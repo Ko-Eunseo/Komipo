@@ -206,6 +206,7 @@ section div > p {
 }
 .slide-container {
   overflow: hidden;
+  width: 50%;
 }
 .container {
   width: 500vw;
@@ -236,9 +237,26 @@ section div > p {
 #hire h3 {
   color: #00414B;
 }
-
+#hire h2 {
+  margin: 50px;
+}
 #hire h2,
 #hire h3 {
   padding: 20px 0;
 }
 
+/* location */
+#location {
+  width:500px;
+  height: 400px;
+}
+
+/* article */
+
+/* footer */
+footer > div {
+  height: 400px;
+  width: 100%;
+  background: #1F1F1F;
+  color: #F8F4F3;
+}
