@@ -83,10 +83,16 @@
     <div class="service">
       <div class="layout">
         <h2>사업분야</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam exercitationem, est in, voluptatem ullam animi consequuntur minima doloremque blanditiis ipsa omnis magni nulla nobis molestias laboriosam unde soluta nam facilis.</p>
+        <div class="big circle">
+          <img class="circle one" src="./images/cut/security.png" alt="">
+          <img class="circle two" src="./images/cut/environment.png" alt="">
+          <img class="circle three" src="./images/cut/fire.png" alt="">
+          <img class="circle four" src="./images/cut/facility.png" alt="">
+          <img class="circle five" src="./images/cut/promotion.png" alt="">
+        </div>
         <button class="buttonLayout">자세히보기</button>
       </div>
-      <div class="slide-container">
+      <!-- <div class="slide-container">
         <div class="container">
           <div class="item">
             <img class="slide" src="./images/original/security.png" alt="security">
@@ -109,7 +115,7 @@
       <button class="btn2">environment</button>
       <button class="btn3">fire</button>
       <button class="btn4">facility</button>
-      <button class="btn5">promotion</button>
+      <button class="btn5">promotion</button> -->
     </div>
   </section>
   <section id="hire">
@@ -131,9 +137,10 @@
     </div>
   </section>
   <section id="location">
-    <h2>사업소 현황</h2>
-    <div id='map'>
-    </div>
+    <article id="weather_map">
+      <h2>사업소 현황</h2>
+      <div id="map"></div>
+  </article>
   </section>
   <section>
     <h2>중부발전 서비스 소식</h2>
@@ -142,19 +149,19 @@
     <div>copyrightⓒeunseogo</div>
   </footer>
 
-  <script src="js/common.js"></script>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62"></script>
-  <script src="./js/map.js"></script>
-  <script>
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-        mapOption = { 
-            center: new kakao.maps.LatLng(37.44058601225342, 126.70477848629551), // 지도의 중심좌표, 구글지도에서 위경도 알 수 있음
-            level: 3 // 지도의 확대 레벨
-        };
-    // 제이슨.JSON 
-    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
+<script src="js/common.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62"></script>
+<script src="./js/map.js"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.44058601225342, 126.70477848629551), // 지도의 중심좌표, 구글지도에서 위경도 알 수 있음
+        level: 3 // 지도의 확대 레벨
+    };
+// 제이슨.JSON 
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-  </script>
+</script>
 </body>
 </html>

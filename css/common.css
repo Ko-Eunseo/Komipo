@@ -178,23 +178,81 @@ button:hover:after {
   margin: 20px 0;
 }
 
-/* aboutKomipo */
-#about {
-  height: 100vh;
-}
 /* content heading */
 h2 {
   padding: 10px;
 }
-
 /* contents layout */
-section > div {
-margin: 0 50px;
+section > div.service {
+text-align: center;
 position: relative;
 }
-section > div:nth-child(even) > div.layout {
+section > div.service > div.layout {
+  margin-left: 50px;
+}
+/* section > div:nth-child(even) > div.layout {
   position: absolute;
-  right: 0;
+  right: 0; 짝수 컨텐츠 오른쪽으로 배치
+} */
+.service .circle {
+  width: 300px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  opacity: 0.9;/*hover하면 진하게 + 1.5배정도? 크게*/
+}
+.service .big.circle {
+  width: 500px;
+  height: 500px;
+  margin: 100px;
+  position: relative;
+}
+/* center of bigcircle */
+.big.circle:before {
+  content: '사업분야';
+  font-size: 25px;
+  color: #00414B;
+  font-weight: 700;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 200px;
+  height: 200px;
+  /* display: inline-block; */
+  z-index: 1;
+}
+.big.circle:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 200px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+
+.one {
+  top: -100px;
+  left: 100px;
+}
+.two {
+  right: -100px;
+  top: 50px;
+}
+.three {
+  right: -30px;
+  bottom: -80px;
+}
+.four {
+  left: -30px;
+  bottom: -80px;
+}
+.five {
+  left: -100px;
+  top: 50px;
 }
 
 section div > p {
@@ -204,6 +262,7 @@ section div > p {
   /* opacity after, background로 먹이기 */
   background-color: #5D8B70;
 }
+/* 
 .slide-container {
   overflow: hidden;
   width: 50%;
@@ -211,7 +270,7 @@ section div > p {
 .container {
   width: 500vw;
   transition: transform .5s;
-}
+} */
 .item {
   width: 100vw;
   float: left;
