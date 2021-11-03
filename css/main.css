@@ -1,13 +1,6 @@
 @charset "utf-8";
 
 /* service hover */
-.service .circle:hover {
+#service .circle:hover {
   opacity: 1;
-  z-index: 2;
 }
-
-.service .circle.one:hover:after {}
-.service .circle.two:hover:after {}
-.service .circle.three:hover:after {}
-.service .circle.four:hover:after {}
-.service .circle.five:hover:after {}

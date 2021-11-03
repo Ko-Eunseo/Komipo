@@ -142,6 +142,7 @@ padding: 0 15%;
 main > div > h1 > span {
   color:#5D8B70;
 }
+
 /* button */
 button {
   padding: 10px;
@@ -163,6 +164,7 @@ button:after {
   width: 10px;
   height: 5px;
 }
+
 /* button hover */
 button:hover {
   background-color: #00414B;
@@ -175,116 +177,56 @@ button:hover:after {
 
 /* button layout */
 .buttonLayout {
-  margin: 20px 0;
+  display: block;
+
 }
 
 /* content heading */
-h2 {
-  padding: 10px;
+h1 {
+  padding: 20px;
 }
+
+/* section height */
+section {
+  height: 100vh;
+  /* 구간확인 */
+  border: 1px solid #5D8B70;
+}
+
+#service > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+
 /* contents layout */
-section > div.service {
-text-align: center;
-position: relative;
+#service > div.layout {
+  text-align: center;
+  height: 90%;
 }
-section > div.service > div.layout {
-  margin-left: 50px;
-}
-/* section > div:nth-child(even) > div.layout {
-  position: absolute;
-  right: 0; 짝수 컨텐츠 오른쪽으로 배치
-} */
-.service .circle {
+
+.circle {
   width: 300px;
   border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  opacity: 0.9;/*hover하면 진하게 + 1.5배정도? 크게*/
+  opacity: 0.9;
+  margin: 10px;
+  border: 10px solid;
 }
-.service .big.circle {
-  width: 500px;
-  height: 500px;
-  margin: 100px;
-  position: relative;
-}
-/* center of bigcircle */
-.big.circle:before {
-  content: '사업분야';
-  font-size: 25px;
-  color: #00414B;
-  font-weight: 700;
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 200px;
-  height: 200px;
-  /* display: inline-block; */
-  z-index: 1;
-}
-.big.circle:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 200px;
-  height: 200px;
-  background-color: #E5E5E5;
-  border-radius: 50%;
-}
+.circle:nth-child(2) { transform: translateY(70%);}
+.circle:nth-child(4) { transform: translateY(-70%);}
 
-.one {
-  top: -100px;
-  left: 100px;
-}
-.two {
-  right: -100px;
-  top: 50px;
-}
-.three {
-  right: -30px;
-  bottom: -80px;
-}
-.four {
-  left: -30px;
-  bottom: -80px;
-}
-.five {
-  left: -100px;
-  top: 50px;
-}
+.layout { position: relative; }
 
-section div > p {
-  width: 400px;
-  padding: 20px;
-
-  /* opacity after, background로 먹이기 */
-  background-color: #5D8B70;
-}
-/* 
-.slide-container {
-  overflow: hidden;
-  width: 50%;
-}
-.container {
-  width: 500vw;
-  transition: transform .5s;
-} */
 .item {
   width: 100vw;
   float: left;
 }
 /* second section hire */
-#hire {
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-}
+#hire h1 {display: block;}
 
 #hire > div {
   display: flex;
-  justify-content: space-around;
   text-align: center;
 }
 
@@ -296,10 +238,7 @@ section div > p {
 #hire h3 {
   color: #00414B;
 }
-#hire h2 {
-  margin: 50px;
-}
-#hire h2,
+
 #hire h3 {
   padding: 20px 0;
 }
