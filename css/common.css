@@ -29,7 +29,7 @@ header {
   /* for vertical center */
   height: 80px;
   line-height: 80px;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* logo */
@@ -132,8 +132,8 @@ main > div {
   padding: 10% 20% 0;
 }
 main > div > h1 {
-  margin-top: 80px; /* gnb 염두*/
-  font-size: 7rem;
+  padding-top: 80px; /*header 80px 염두*/
+  font-size: 7vw;
   line-height: 1.2;
 }
 main > div > p {
@@ -143,57 +143,20 @@ main > div > h1 > span {
   color:#5D8B70;
 }
 
-/* button */
-button {
-  padding: 10px;
-  width: 120px;
-  border: 1.5px solid white;
-  color: white;
-  background-color: #E5E5E5;
-  cursor: pointer;
-  position: relative;
-  text-align: left;
-}
-button:after {
-  content: '';
-  border-top: 1.5px solid white;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  display: block;
-  width: 10px;
-  height: 5px;
-}
-
-/* button hover */
-button:hover {
-  background-color: #00414B;
-  color: #FFC3A5;
-  border: 1.5px solid #FFC3A5;
-}
-button:hover:after {
-  border-top: 1.5px solid #FFC3A5;
-}
-
-/* button layout */
-.buttonLayout {
-  display: block;
-
-}
-
 /* content heading */
-h1 {
-  padding: 20px;
+h1 { 
+  font-size: 2em; 
+  padding: 80px;
+  z-index: 1;
 }
-
 /* section height */
 section {
   height: 100vh;
   /* 구간확인 */
   border: 1px solid #5D8B70;
-  overflow: hidden;
+  text-align: center;
 }
-
+#service h1 { padding: 20px 0;}
 #service > div > div > div {
   width: 17vw;
   float: left;
@@ -219,44 +182,132 @@ section {
 #service .serviceContents > div:nth-child(4) .circle { border-color: #5F6579;}
 #service .serviceContents > div:nth-child(5) .circle { border-color: #757877;}
 
-#service .serviceContents > div:nth-child(1) { transform: translateY(30%); }
-#service .serviceContents > div:nth-child(3) { transform: translateY(30%); }
-#service .serviceContents > div:nth-child(5) { transform: translateY(30%); }
+#service .serviceContents > div:nth-child(1),
+#service .serviceContents > div:nth-child(3),
+#service .serviceContents > div:nth-child(5) { transform: translate(50%,50%); }
 
-#service .serviceContents > div:nth-child(2) { transform: translateY(80%); }
-#service .serviceContents > div:nth-child(4) { transform: translateY(-20%); }
+#service .serviceContents > div:nth-child(2) { transform: translate(50%,120%); }
+#service .serviceContents > div:nth-child(4) { transform: translate(50%,-20%); }
 
-#service .serviceContents > div:nth-child(2) h2+p { display: flex;  }
-
-
-
-.layout { position: relative; }
-
-.item {
-  width: 100vw;
-  float: left;
-}
 /* second section hire */
-#hire h1 {display: block;}
+/* layout */
 
-#hire > div {
+#hire > div.hireWrap {
+  width: 100%;
+  padding-top: 1vw;
   display: flex;
-  text-align: center;
+  vertical-align: middle;
+  justify-content:space-around;
+}
+#hire > div.hireWrap > div {
+  background-color: #E5E5E5;
+  border: 5px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 500px;
+  z-index: 1;
+}
+/* color */
+#hire > div.hireWrap > div:nth-child(1) { color: #44ADC0;}
+#hire > div.hireWrap > div:nth-child(2) { color: #42C5A3;}
+#hire > div.hireWrap > div:nth-child(3) { color: #0A7EB8;}
+#hire p {color:#1F1F1F;}
+
+/* decoration */
+.hireWrap > div {position: relative;}
+.ribbon {
+  content: '';
+  width: 18vw;
+  height: 80px;
+  line-height: 80px;
+  background-color: orangered;
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  left: -60px;
+  top: 100px;
+  border-radius: 30px 50px 50px 30px;
+  z-index: -1;
+  color: white;
+}
+/* ribon wrapping side */
+.ribbon:before {
+  content: '';
+  width: 54px;
+  height: 60px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  left: 0x;
+  bottom: -20px;
+  border-radius: 0 0 0 30px;
+  z-index: -1;
+}
+/* ribbon shadow */
+.ribbon:after {
+  content: '';
+  width: 40px;
+  height: 20px;
+  background-color: olive;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 15px;
+  top: 113%;
+  border-radius: 50px 0 0 50px;
+  z-index: 1;
+}
+/* ribbon color */
+#hire > .hireWrap > div:nth-child(1) .ribbon,
+#hire > .hireWrap > div:nth-child(1) .ribbon:before {background-color: #44ADC0;}
+#hire > .hireWrap > div:nth-child(2) .ribbon,
+#hire > .hireWrap > div:nth-child(2) .ribbon:before {background-color: #42C5A3;}
+#hire > .hireWrap > div:nth-child(3) .ribbon,
+#hire > .hireWrap > div:nth-child(3) .ribbon:before {background-color: #0A7EB8;}
+
+#hire > .hireWrap > div:nth-child(1) .ribbon:after {background-color: #33818f;}
+#hire > .hireWrap > div:nth-child(2) .ribbon:after {background-color: #2a7a65;}
+#hire > .hireWrap > div:nth-child(3) .ribbon:after {background-color: #0a6592;}
+/* hire font */
+#hire i { padding: 20px; }
+#hire p { padding-bottom: 10px; }
+
+/* button */
+button {
+  padding: 10px;
+  width: 120px;
+  border: 1.5px solid white;
+  color: white;
+  background-color: #E5E5E5;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+button:after {
+  content: '';
+  border-top: 1.5px solid white;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 10px;
+  height: 5px;
+}
+/* button hover */
+button:hover {
+  background-color: #ddd;
 }
 
-#hire > .hireWrap > div > i:hover {
-  color: #5D8B70;
-}
+/* button layout */
+.buttonLayout {
+  display: block;
 
-#hire i,
-#hire h3 {
-  color: #00414B;
 }
-
-#hire h3 {
-  padding: 20px 0;
-}
-
 /* location */
 #location {
   width:500px;
