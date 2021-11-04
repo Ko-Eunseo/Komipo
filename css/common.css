@@ -191,30 +191,44 @@ section {
   height: 100vh;
   /* 구간확인 */
   border: 1px solid #5D8B70;
+  overflow: hidden;
 }
 
-#service > div > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
+#service > div > div > div {
+  width: 17vw;
+  float: left;
 }
 
 /* contents layout */
 #service > div.layout {
   text-align: center;
-  height: 90%;
+  /* height: 90%; */
 }
 
 .circle {
-  width: 300px;
+  width: 17vw;
   border-radius: 50%;
   opacity: 0.9;
   margin: 10px;
   border: 10px solid;
 }
-.circle:nth-child(2) { transform: translateY(70%);}
-.circle:nth-child(4) { transform: translateY(-70%);}
+
+#service .serviceContents > div:nth-child(1) .circle { border-color: #567F8D;}
+#service .serviceContents > div:nth-child(2) .circle { border-color: #313B43;}
+#service .serviceContents > div:nth-child(3) .circle { border-color: #5D8B70; }
+#service .serviceContents > div:nth-child(4) .circle { border-color: #5F6579;}
+#service .serviceContents > div:nth-child(5) .circle { border-color: #757877;}
+
+#service .serviceContents > div:nth-child(1) { transform: translateY(30%); }
+#service .serviceContents > div:nth-child(3) { transform: translateY(30%); }
+#service .serviceContents > div:nth-child(5) { transform: translateY(30%); }
+
+#service .serviceContents > div:nth-child(2) { transform: translateY(80%); }
+#service .serviceContents > div:nth-child(4) { transform: translateY(-20%); }
+
+#service .serviceContents > div:nth-child(2) h2+p { display: flex;  }
+
+
 
 .layout { position: relative; }
 
