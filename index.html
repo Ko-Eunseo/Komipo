@@ -130,31 +130,82 @@
     </div>
   </section>
   <section id="location">
-    <article id="weather_map">
+    <article>
       <h1>사업소 현황</h1>
-      <div id="map"></div>
-  </article>
+      <div class="mapBox">
+        <div id="map"></div>
+        <div class="map-list">
+          <label for="search">
+            <i class="fas fa-search"></i>
+            <input type="search" >
+          </label>
+          <ul>
+            <li>서울</li>
+            <li>서울</li>
+            <li>서울</li>
+            <li>서울</li>
+          </ul>
+        </div>
+      </div>
+      <button>바로가기</button>
+    </article>
   </section>
-  <section>
-    <h1>중부발전 서비스 소식</h1>
+  <section id="news">
+      <h1>News</h1>
+      <div class="slide-container">
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </div>
+    <div class="before"><i class="fas fa-chevron-left"></i></div>
+    <div class="after"><i class="fas fa-chevron-right"></i></div>
   </section>
   <footer>
-    <div>copyrightⓒeunseogo</div>
+    <div>
+      <div class="footer-logo">
+        <img src="./images/icon/komipo-footer.png" alt="">
+        <h3>사업장소재지</h3>
+        <p>TEL</p>
+        <p>FAX</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="">회사소개</a>
+            <ul>
+              <li><a href="">회사소개</a></li>
+              <li><a href="">회사소개</a></li>
+              <li><a href="">회사소개</a></li>
+            </ul>
+          </li>
+          <li><a href="">사업분야</a>
+            <ul>
+              <li><a href="">사업분야</a></li>
+              <li><a href="">사업분야</a></li>
+              <li><a href="">사업분야</a></li>
+            </ul>
+          </li>
+          <li><a href="">사업소현황</a>
+            <ul>
+              <li><a href="">사업소현황</a></li>
+              <li><a href="">사업소현황</a></li>
+              <li><a href="">사업소현황</a></li>
+            </ul>
+          </li>
+          <li><a href="">알림마당</a>
+            <ul>
+              <li><a href="">알림마당</a></li>
+              <li><a href="">알림마당</a></li>
+              <li><a href="">알림마당</a></li>
+              <li><a href="">알림마당</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </footer>
-
 <script src="js/common.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62"></script>
 <script src="./js/map.js"></script>
-<script>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapOption = { 
-        center: new kakao.maps.LatLng(37.44058601225342, 126.70477848629551), // 지도의 중심좌표, 구글지도에서 위경도 알 수 있음
-        level: 3 // 지도의 확대 레벨
-    };
-// 제이슨.JSON 
-// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-</script>
 </body>
 </html>
