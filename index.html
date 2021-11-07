@@ -132,26 +132,22 @@
   <section id="location">
     <article>
       <h1>사업소 현황</h1>
-      <div class="mapBox">
+      <div class="map_wrap">
         <div id="map"></div>
-        <div class="map-list">
-          <label for="search">
-            <i class="fas fa-search"></i>
-            <input type="search" >
-          </label>
-          <ul>
-            <li>중부본사</li>
-            <li>보령사업소</li>
-            <li>신보령사업소</li>
-            <li>신서천사업소</li>
-            <li>인천사업소</li>
-            <li>서울(원주)사업소</li>
-            <li>제주사업소</li>
-            <li>세종사업소</li>
-          </ul>
+        <div id="menu_wrap">
+          <div class="option">
+            <div>
+              <form onsubmit="searchPlaces(); return false;">
+                <i class="fas fa-search"></i>
+                <input type="text" value="한국중부발전본부" id="keyword" size="15"> 
+              </form>
+            </div>
+          </div>
+          <hr>
+          <ul id="placesList"></ul>
+          <div id="pagination"></div>
         </div>
       </div>
-      <button>바로가기</button>
     </article>
   </section>
   <section id="news">
@@ -209,7 +205,7 @@
     </div>
   </footer>
 <script src="js/common.js"></script>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
 <script src="./js/map.js"></script>
 </body>
 </html>
