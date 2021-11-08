@@ -12,7 +12,6 @@
 li {
   list-style: none;
 }
-
 body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #E5E5E5;
@@ -22,7 +21,7 @@ body {
 
 /* header */
 header {
-  background-color: #F8F4F3;
+  /* background-color: #F8F4F3; */
   width: 100%; 
   position: fixed;
   top: 0;
@@ -42,7 +41,6 @@ header > div.logo > a > img {
   margin-top: 23px;
   max-width: 100%;
 }
-
 header > div.logo > a > h1 {
   display: inline-block;
   font-size: 0;
@@ -127,23 +125,58 @@ header > div.headerIcon > div.search > label > input {
 
 /* main cover */
 main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* .cover_imgs {
+  width: 100vw;
   height: 100vh;
-}
-main > div {
-  padding: 10% 20% 0;
-}
-main > div > h1 {
-  padding-top: 80px; /*header 80px 염두*/
-  font-size: 7vw;
-  line-height: 1.2;
-}
-main > div > p {
-padding: 0 15%;
-}
-main > div > h1 > span {
-  color:#5D8B70;
-}
+} */
+/* slider */
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
 
+}
+.slider-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: all 1s ease-in-out;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 50%;
+  transform:translateY(-50%);
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+}
+.pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.pager span {
+  width: 10px;
+  height: 10px;
+  background-color:#F8F4F3;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent: -9999em;
+  margin: 0 10px;
+}
+.pager span.active {
+  background-color: #44ADC0;
+}
 /* content heading */
 h1 { 
   font-size: 2em; 
@@ -226,7 +259,7 @@ section {
   background-color: orangered;
   display: block;
   position: absolute;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
   left: -60px;
   top: 100px;
   border-radius: 30px 50px 50px 30px;
@@ -380,7 +413,7 @@ button:hover {
   background-color: rgba(78, 56, 54, 0.3);
 }
 
-/* section-article */
+/* section-news */
 #news { 
   width: 100%; 
   text-align: left;
@@ -410,6 +443,51 @@ div.before {
   margin-left: 30vw;
 }
 
+/* section-article */
+#news > article {
+  position:relative; 
+  display: table;
+  width: 100%;
+  margin-top: 50px;
+}
+.cover_sentence {
+  color: #F8F4F3;
+  vertical-align: middle;
+  width: 100%;
+  height: 290px;
+  line-height: 100px;
+  background-image: url(../images/original/cover2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover_sentence > h1 {
+  font-size: 3vw;
+  line-height: 1.2;
+  padding: 0 20px 0 50px;
+  display: table-cell;
+  vertical-align:middle;
+}
+.cover_sentence > p {
+  display: inline-block;
+  line-height: 1.2;
+  display: table-cell;
+  vertical-align:middle;
+}
+#news > article > button {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  z-index: 3;
+  background-color: transparent;
+  padding: 40px;
+  margin-right: 50px;
+}
+#news > article > button:hover {
+  background-color: #f8f4f381;
+}
 /* footer */
 footer {
   border-top: 130px solid black;

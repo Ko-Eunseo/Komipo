@@ -64,12 +64,25 @@
       </div>
   </header>
   <main>
-    <div>
-      <h1>
-        <span>KOMIPO</span><br/>
-      SERVICE</h1>
-      <p>삶의 가치를 높이는 글로벌 에너지 리더 다양한 지원업무를</p>
-      <p>통하여 에너지 산업을 선도하겠습니다.</p>
+    <div class="container cover_imgs">
+      <ul class="slider-container" id="slider">
+        <li class="slide">
+          <img src="./images/original/cover1.png" alt="">
+        </li>
+        <li class="slide">
+          <img src="./images/original/cover2.png" alt="">
+        </li>
+        <li class="slide">
+          <img src="./images/original/cover3.png" alt="">
+        </li>
+      </ul>
+      <p class="pager">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </p>
+      <a href="" id="prev"><i class="fas fa-chevron-left"></i></a>
+      <a href="" id="next"><i class="fas fa-chevron-right"></i></a>
     </div>
   </main>
   <section id="service">
@@ -139,7 +152,7 @@
             <div>
               <form onsubmit="searchPlaces(); return false;">
                 <i class="fas fa-search"></i>
-                <input type="text" value="한국중부발전본부" id="keyword" size="15"> 
+                <input type="text" value="한국중부발전" id="keyword" size="15"> 
               </form>
             </div>
           </div>
@@ -151,15 +164,26 @@
     </article>
   </section>
   <section id="news">
-      <h1>News</h1>
-      <div class="slide-container">
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
+    <h1>News</h1>
+    <div class="slide-container">
+      <article>1</article>
+      <article>2</article>
+      <article>3</article>
+      <article>4</article>
     </div>
     <div class="before"><i class="fas fa-chevron-left"></i></div>
     <div class="after"><i class="fas fa-chevron-right"></i></div>
+    <article>
+      <div class="cover_sentence">
+        <h1>
+          <span>KOMIPO</span><br/>
+        SERVICE</h1>
+        <p>삶의 가치를 높이는 글로벌 에너지 리더
+        <br/>
+        다양한 지원업무를 통하여 에너지 산업을 선도하겠습니다.</p>
+      </div>
+      <button>Contact us</button>
+    </article>
   </section>
   <footer>
     <div>
@@ -205,6 +229,7 @@
     </div>
   </footer>
 <script src="js/common.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
 <script src="./js/map.js"></script>
 </body>
