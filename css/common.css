@@ -129,17 +129,14 @@ main {
   width: 100%;
   overflow: hidden;
 }
-/* .cover_imgs {
-  width: 100vw;
-  height: 100vh;
-} */
 /* slider */
 .container {
   position: relative;
   width: 100%;
   overflow: hidden;
+  top: 0;
   height: 100vh;
-
+  /* 반응형 */
 }
 .slider-container {
   position: absolute;
@@ -158,11 +155,16 @@ main {
   overflow: hidden;
   height: 100%;
 }
+/* 반응형 */
+.slide img {
+  width: 100%;
+  height: 100vh;
+}
 .pager {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: 80%;
   text-align: center;
 }
 .pager span {
@@ -185,22 +187,26 @@ h1 {
 }
 /* section height */
 section {
-  height: 100vh;
   text-align: center;
 }
 #service {
   padding-top: 20px;
+  height: 100vh;
+  /* 반응형 적용할것 */
 }
 #service h1 { padding: 20px 0;}
-#service > div > div > div {
-  width: 17vw;
-  float: left;
+
+.serviceContents div {
+  display: inline-block;
+}
+.serviceContents:after {
+  content: '';
+  display: block;
 }
 
 /* contents layout */
 #service > div.layout {
   text-align: center;
-  /* height: 90%; */
 }
 
 .circle {
@@ -219,10 +225,10 @@ section {
 
 #service .serviceContents > div:nth-child(1),
 #service .serviceContents > div:nth-child(3),
-#service .serviceContents > div:nth-child(5) { transform: translate(50%,50%); }
+#service .serviceContents > div:nth-child(5) { transform: translate(0%,50%); }
 
-#service .serviceContents > div:nth-child(2) { transform: translate(50%,120%); }
-#service .serviceContents > div:nth-child(4) { transform: translate(50%,-20%); }
+#service .serviceContents > div:nth-child(2) { transform: translate(0%,120%); }
+#service .serviceContents > div:nth-child(4) { transform: translate(0%,-10%); }
 
 /* second section hire */
 /* layout */
