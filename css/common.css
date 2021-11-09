@@ -188,6 +188,9 @@ section {
   height: 100vh;
   text-align: center;
 }
+#service {
+  padding-top: 20px;
+}
 #service h1 { padding: 20px 0;}
 #service > div > div > div {
   width: 17vw;
