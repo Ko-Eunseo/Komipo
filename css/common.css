@@ -102,8 +102,8 @@ header > div.headerIcon > div.search > label > input {
   font-size: 1.2rem;
   position: absolute;
   top: -10px;
-  left: 60%;
-  padding-left: 20px;
+  left: 40%;
+  padding-left: 5%;
 }
 
 /* hover시 부메뉴 open */
@@ -112,7 +112,7 @@ header > div.headerIcon > div.search > label > input {
 }
 /* hover effect가 부메뉴에 영향을 주지 않도록 함 */
 #gnbBox > nav > ul > li {
-  width: 50%;
+  width: 30%;
 }
 /* menu hover effect */
 #gnbBox > nav.gnb > ul > li:hover {
@@ -199,10 +199,6 @@ section {
 .serviceContents div {
   display: inline-block;
 }
-.serviceContents:after {
-  content: '';
-  display: block;
-}
 
 /* contents layout */
 #service > div.layout {
@@ -210,25 +206,73 @@ section {
 }
 
 .circle {
-  width: 17vw;
+  width: 300px;
   border-radius: 50%;
-  opacity: 0.9;
-  margin: 10px;
   border: 10px solid;
 }
 
-#service .serviceContents > div:nth-child(1) .circle { border-color: #567F8D;}
-#service .serviceContents > div:nth-child(2) .circle { border-color: #313B43;}
-#service .serviceContents > div:nth-child(3) .circle { border-color: #5D8B70; }
-#service .serviceContents > div:nth-child(4) .circle { border-color: #5F6579;}
-#service .serviceContents > div:nth-child(5) .circle { border-color: #757877;}
+#service .serviceContents > div:nth-child(1) .circle { border-color: #59808C;}
+#service .serviceContents > div:nth-child(2) .circle { border-color: #42C5A3;}
+#service .serviceContents > div:nth-child(3) .circle { border-color: #06ADB2; }
+#service .serviceContents > div:nth-child(4) .circle { border-color: #097EB6;}
+#service .serviceContents > div:nth-child(5) .circle { border-color: #5D8B70;}
 
 #service .serviceContents > div:nth-child(1),
 #service .serviceContents > div:nth-child(3),
 #service .serviceContents > div:nth-child(5) { transform: translate(0%,50%); }
 
-#service .serviceContents > div:nth-child(2) { transform: translate(0%,120%); }
+#service .serviceContents > div:nth-child(2) { transform: translate(0%,110%); }
 #service .serviceContents > div:nth-child(4) { transform: translate(0%,-10%); }
+#service .serviceContents > div {
+  position: relative;
+}
+
+#service .serviceContents > div > .service-detail {
+  position: absolute;
+  width: 300px;
+  bottom: -150px;
+  left: 0;
+  padding: 10px;
+  border: 10px solid #59808C;
+  border-radius: 20px;
+}
+#service .serviceContents > div:nth-child(2) > .service-detail {
+  border-color: #42C5A3;
+}
+.serviceContents > div > .service-cover:hover~.triangle {
+  display: inline-block;
+}
+.service-detail.triangle {
+  position: relative;
+  display: none;
+}
+.triangle:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #59808C;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: -29px;
+}
+#service div.environment > .triangle { bottom: -100px;}
+
+#service div.environment > .triangle:after { border-bottom-color: #42C5A3;}
+#service div.fire > .triangle:after { border-bottom-color: #06ADB2;}
+#service div.facility > .triangle:after { border-bottom-color: #097EB6;}
+#service div.promotion > .triangle:after { border-bottom-color: #5D8B70;}
+
+#service .serviceContents > div:nth-child(3) > .service-detail {
+  border-color: #06ADB2;
+}
+#service .serviceContents > div:nth-child(4) > .service-detail {
+  border-color: #097EB6;
+}
+#service .serviceContents > div:nth-child(5) > .service-detail {
+  border-color: #5D8B70;
+}
 
 /* second section hire */
 /* layout */

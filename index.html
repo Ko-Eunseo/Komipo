@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,9 +30,12 @@
           <ul>
             <li><a href="" onclick="openMenu()">회사소개</a>
               <ul>
-                <li><a href="">회사소개</a></li>
-                <li><a href="">회사소개</a></li>
-                <li><a href="">회사소개</a></li>
+                <li><a href="">CEO인사말</a></li>
+                <li><a href="">회사 개요</a></li>
+                <li><a href="">조직도</a></li>
+                <li><a href="">CI소개</a></li>
+                <li><a href="">찾아오시는길</a></li>
+                <li><a href="">경영방침</a></li>
               </ul>
             </li>
             <li><a href="" onclick="openMenu()">사업분야</a>
@@ -89,25 +92,63 @@
     <div class="layout">
       <h1>사업분야</h1>
       <div class="serviceContents">
-        <div>
-          <h3>특수경비</h3>
-          <img class="circle" src="./images/cut/security.png" alt="">
+        <div class="security">
+          <div class="service-cover">
+            <h3>특수경비</h3>
+            <span class="big">
+              <img class="circle" src="./images/cut/security.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail triangle">
+            <p>발전소의 시설보호와 경비구역 내 
+              <br/>사무동 및 핵심시설의 테러, 침투, 
+              <br/>도난, 화재, 안전사고 발생 등 사전 
+              <br/>예방 및 관련 사업 수행</p>
+          </div>
         </div>
-        <div>
-          <h3>환경위생</h3>
-          <img class="circle" src="./images/cut/environment.png" alt="">
+        <div class="environment">
+          <div class="service-cover">
+            <h3>환경위생</h3>
+            <span class="big">
+              <img class="circle" src="./images/cut/environment.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail triangle">
+            <p>인간과 환경을 생각하는 서비스 제공으로 고객 만족을 실현합니다</p>
+          </div>
         </div>
-        <div>
-          <h3>소방방재</h3>
-          <img class="circle" src="./images/cut/fire.png" alt="">
+        <div class="fire">
+          <div class="service-cover">
+            <h3>소방방재</h3>
+            <span class="big">
+              <img class="circle" src="./images/cut/fire.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail triangle">
+            <p>소방시설 자체 점검, 통합 관제실 운영을 통한 소방시설 최적 유지 및 화재 발생 시 화재 진압 수행</p>
+          </div>
         </div>
-        <div>
-          <h3>시설관리</h3>
-          <img class="circle" src="./images/cut/facility.png" alt="">
+        <div class="facility">
+          <div class="service-cover">
+            <h3>시설관리</h3>
+            <span class="big">
+              <img class="circle" src="./images/cut/facility.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail triangle">
+            <p>이용자의 편의와 안전을 높이기 위한 전문적인 시설관리업무 수행</p>
+          </div>
         </div>
-        <div>
-          <h3>홍보안내</h3>
-          <img class="circle" src="./images/cut/promotion.png" alt="">
+        <div class="promotion">
+          <div class="service-cover">
+            <h3>홍보안내</h3>
+            <span class="big">
+              <img class="circle" src="./images/cut/promotion.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail triangle">
+            <p>발전에너지의 체험중심 교육, 홍보를 통한 이해도 증진업무 수행</p>
+          </div>
         </div>
       </div>
     </div>
@@ -209,9 +250,12 @@
         <ul>
           <li><a href="">회사소개</a>
             <ul>
-              <li><a href="">회사소개</a></li>
-              <li><a href="">회사소개</a></li>
-              <li><a href="">회사소개</a></li>
+              <li><a href="">CEO인사말</a></li>
+              <li><a href="">회사 개요</a></li>
+              <li><a href="">조직도</a></li>
+              <li><a href="">CI소개</a></li>
+              <li><a href="">찾아오시는길</a></li>
+              <li><a href="">경영방침</a></li>
             </ul>
           </li>
           <li><a href="">사업분야</a>
@@ -245,6 +289,5 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
 <script src="./js/map.js"></script>
 <script src="./js/news.js"></script>
-<script src="./js/news.py"></script>
 </body>
 </html>
