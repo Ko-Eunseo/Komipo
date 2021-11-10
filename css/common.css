@@ -47,20 +47,23 @@ header > div.logo > a > h1 {
 }
 /* headerIcon */
 header > div.headerIcon {
-  display: flex;
-  position: absolute;
+  float: left;
+  position: fixed;
   right: 50px;
   top: 0;
 }
 /* search*/
 header > div.headerIcon > div.search {
-  padding: 0 10px
+  padding: 0 10px;
+  display: inline-block;
 }
 header > div.headerIcon > div.search > label > input {
   /* 클릭시 나타나게 */
   display: none;
 }
-
+header > div.headerIcon > div.open {
+  display: inline-block;
+}
 /* gnb */
 #gnbBox {
   height: 100%;
@@ -190,6 +193,7 @@ section {
   text-align: center;
 }
 #service {
+  overflow: hidden;
   padding-top: 20px;
   height: 100vh;
   /* 반응형 적용할것 */
@@ -203,6 +207,7 @@ section {
 /* contents layout */
 #service > div.layout {
   text-align: center;
+  height: 90%;
 }
 
 .circle {
@@ -239,6 +244,7 @@ section {
 #service .serviceContents > div:nth-child(2) > .service-detail {
   border-color: #42C5A3;
 }
+/* hover:visible */
 .serviceContents > div > .service-cover:hover~.triangle {
   display: inline-block;
 }
@@ -257,44 +263,52 @@ section {
   position: absolute;
   top: -29px;
 }
-#service div.environment > .triangle { bottom: -100px;}
+#service div.environment > .triangle {
+  bottom: 50px;
+  left: 110%;
+}
 
-#service div.environment > .triangle:after { border-bottom-color: #42C5A3;}
+#service div.environment > .triangle:after { 
+  /* border-bottom-color: #42C5A3; */
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #42C5A3;
+  left: -10.5%;
+  top: 30%;
+}
 #service div.fire > .triangle:after { border-bottom-color: #06ADB2;}
 #service div.facility > .triangle:after { border-bottom-color: #097EB6;}
 #service div.promotion > .triangle:after { border-bottom-color: #5D8B70;}
 
-#service .serviceContents > div:nth-child(3) > .service-detail {
+#service .serviceContents > div.fire > .service-detail {
   border-color: #06ADB2;
 }
-#service .serviceContents > div:nth-child(4) > .service-detail {
+#service .serviceContents > div.facility > .service-detail {
   border-color: #097EB6;
 }
-#service .serviceContents > div:nth-child(5) > .service-detail {
+#service .serviceContents > div.promotion > .service-detail {
   border-color: #5D8B70;
+}
+#service button {
+  margin: 0 50px;
+  float: right;
 }
 
 /* second section hire */
 /* layout */
-
 #hire > div.hireWrap {
   width: 100%;
+  padding: 0 100px;
   padding-top: 1vw;
-  display: flex;
-  vertical-align: middle;
-  justify-content:space-around;
 }
 #hire > div.hireWrap > div {
   background-color: #E5E5E5;
   border: 5px solid;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   width: 300px;
   height: 500px;
   z-index: 1;
+  margin: 0 100px;
+  float: left;
 }
 /* color */
 #hire > div.hireWrap > div:nth-child(1) { color: #44ADC0;}
@@ -359,7 +373,7 @@ section {
 #hire > .hireWrap > div:nth-child(2) .ribbon:after {background-color: #2a7a65;}
 #hire > .hireWrap > div:nth-child(3) .ribbon:after {background-color: #0a6592;}
 /* hire font */
-#hire i { padding: 20px; }
+#hire i { padding: 20px; padding-top: 150px;}
 #hire p { padding-bottom: 10px; }
 
 /* button */
@@ -397,6 +411,9 @@ button:hover {
   display: inline-block;
   margin: 0 auto;
   /* overflow: hidden; */
+}
+#location {
+  clear: both;
 }
 #map {
   width: 500px;
@@ -556,12 +573,14 @@ footer > div {
   padding: 50px;
   position: absolute;
   top: -50px;
-  display: flex;
   width: calc(100% - 50px);
+  height: 300px;
+  overflow: hidden;
 }
 footer > div > .footer-logo { 
   border-right: 1px solid #5B5B5B;
   padding: 10px 50px 0;
+  float: left;
 }
 footer > div > .footer-logo > img {
   width: 170px;
