@@ -121,15 +121,22 @@ section:last-child > div:nth-child(2) {position: relative;}
 
 /* 안전보건 경영방침 */
 .security-management-box { position: table; }
-.security-management-box > span {
+.security-management-box > div:nth-child(1) {
   vertical-align: middle;
   width: 500px;
   float: right;
   position: relative;
   left: -50%;
 }
-.security-management-box > span > img {
+.security-management-box span > img {
   width: 100%;
+}
+.security-management-box .goal {
+  color: white;
+  background: linear-gradient(70deg, #3065a7, #42C5A3);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 .security-management {
   padding: 0 50px 50px;
