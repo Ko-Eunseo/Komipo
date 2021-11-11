@@ -27,8 +27,6 @@ section {
 }
 #service {
   padding-top: 20px;
-  height: 100vh;
-  /* 반응형 적용할것 */
 }
 #service h1 { padding: 20px 0;}
 

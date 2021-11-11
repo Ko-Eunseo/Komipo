@@ -5,3 +5,341 @@
   opacity: 1;
 }
 
+#service {
+  overflow: hidden;
+  padding-top: 20px;
+  height: 100vh;
+  /* 반응형 적용할것 */
+}
+#service h1 { padding: 20px 0;}
+
+.serviceContents div {
+  display: inline-block;
+}
+
+
+/* contents layout */
+#service > div.layout {
+  text-align: center;
+  height: 90%;
+}
+
+.circle {
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid;
+}
+
+#service .serviceContents > div:nth-child(1) .circle { border-color: #59808C;}
+#service .serviceContents > div:nth-child(2) .circle { border-color: #42C5A3;}
+#service .serviceContents > div:nth-child(3) .circle { border-color: #06ADB2; }
+#service .serviceContents > div:nth-child(4) .circle { border-color: #097EB6;}
+#service .serviceContents > div:nth-child(5) .circle { border-color: #5D8B70;}
+
+#service .serviceContents > div:nth-child(1),
+#service .serviceContents > div:nth-child(3),
+#service .serviceContents > div:nth-child(5) { transform: translate(0%,50%); }
+
+#service .serviceContents > div:nth-child(2) { transform: translate(0%,110%); }
+#service .serviceContents > div:nth-child(4) { transform: translate(0%,-10%); }
+#service .serviceContents > div {
+  position: relative;
+}
+
+#service .serviceContents > div > .service-detail {
+  position: absolute;
+  width: 300px;
+  bottom: -150px;
+  left: 0;
+  padding: 10px;
+  border: 10px solid #59808C;
+  border-radius: 20px;
+}
+#service .serviceContents > div:nth-child(2) > .service-detail {
+  border-color: #42C5A3;
+}
+/* hover:visible */
+.serviceContents > div > .service-cover:hover~.triangle {
+  display: inline-block;
+}
+.service-detail.triangle {
+  position: relative;
+  display: none;
+}
+.triangle:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #59808C;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: -29px;
+}
+#service div.environment > .triangle {
+  bottom: 50px;
+  left: 110%;
+}
+
+#service div.environment > .triangle:after { 
+  /* border-bottom-color: #42C5A3; */
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #42C5A3;
+  left: -10.5%;
+  top: 30%;
+}
+#service div.fire > .triangle:after { border-bottom-color: #06ADB2;}
+#service div.facility > .triangle:after { border-bottom-color: #097EB6;}
+#service div.promotion > .triangle:after { border-bottom-color: #5D8B70;}
+
+#service .serviceContents > div.fire > .service-detail {
+  border-color: #06ADB2;
+}
+#service .serviceContents > div.facility > .service-detail {
+  border-color: #097EB6;
+}
+#service .serviceContents > div.promotion > .service-detail {
+  border-color: #5D8B70;
+}
+#service button {
+  margin: 0 50px;
+  float: right;
+}
+
+/* second section hire */
+/* layout */
+#hire > div.hireWrap {
+  width: 100%;
+  padding: 0 100px;
+  padding-top: 1vw;
+}
+#hire > div.hireWrap > div {
+  background-color: #E5E5E5;
+  border: 5px solid;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  z-index: 1;
+  margin: 0 100px;
+  float: left;
+}
+/* color */
+#hire > div.hireWrap > div:nth-child(1) { color: #44ADC0;}
+#hire > div.hireWrap > div:nth-child(2) { color: #42C5A3;}
+#hire > div.hireWrap > div:nth-child(3) { color: #0A7EB8;}
+#hire p {color:#1F1F1F;}
+
+/* decoration */
+.hireWrap > div {position: relative;}
+.ribbon {
+  content: '';
+  width: 18vw;
+  height: 80px;
+  line-height: 80px;
+  background-color: orangered;
+  display: block;
+  position: absolute;
+  transform: translateY(-80%);
+  left: -60px;
+  top: 100px;
+  border-radius: 30px 50px 50px 30px;
+  z-index: -1;
+  color: white;
+}
+/* ribon wrapping side */
+.ribbon:before {
+  content: '';
+  width: 54px;
+  height: 60px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  left: 0x;
+  bottom: -20px;
+  border-radius: 0 0 0 30px;
+  z-index: -1;
+}
+/* ribbon shadow */
+.ribbon:after {
+  content: '';
+  width: 40px;
+  height: 20px;
+  background-color: olive;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 15px;
+  top: 113%;
+  border-radius: 50px 0 0 50px;
+  z-index: 1;
+}
+/* ribbon color */
+#hire > .hireWrap > div:nth-child(1) .ribbon,
+#hire > .hireWrap > div:nth-child(1) .ribbon:before {background-color: #44ADC0;}
+#hire > .hireWrap > div:nth-child(2) .ribbon,
+#hire > .hireWrap > div:nth-child(2) .ribbon:before {background-color: #42C5A3;}
+#hire > .hireWrap > div:nth-child(3) .ribbon,
+#hire > .hireWrap > div:nth-child(3) .ribbon:before {background-color: #0A7EB8;}
+
+#hire > .hireWrap > div:nth-child(1) .ribbon:after {background-color: #33818f;}
+#hire > .hireWrap > div:nth-child(2) .ribbon:after {background-color: #2a7a65;}
+#hire > .hireWrap > div:nth-child(3) .ribbon:after {background-color: #0a6592;}
+/* hire font */
+#hire i { padding: 20px; padding-top: 150px;}
+#hire p { padding-bottom: 10px; }
+
+
+/* location */
+#location .map_wrap {
+  display: inline-block;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+#location {
+  clear: both;
+}
+#map {
+  width: 500px;
+  height: 500px;
+  /* float: left; */
+}
+#location input {
+  padding: 10px 35px;
+  width: 100%;
+  border: none;
+  margin: 10px 0;
+}
+#location i {
+  position: absolute;
+  z-index: 1;
+  top: 27px;
+  left: 18px;
+}
+
+/* map api */
+.map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
+.map_wrap {
+  position:relative;
+  width:500px;
+  height:500px;
+  left:0;
+  transform: translate(-50%);
+}
+#menu_wrap {
+  position:absolute;
+  top:0;
+  left:0;
+  transform: translate(100%);
+  bottom:0;
+  width:500px;
+  height: 500px;
+  padding:5px;
+  overflow-y:auto;
+  background:rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  font-size:12px;
+}
+#menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+#menu_wrap .option{text-align: center;}
+#menu_wrap .option p {margin:10px 0;}  
+#menu_wrap .option button {margin-left:5px;}
+#placesList li {list-style: none;}
+#placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
+#placesList .item span {display: block;margin-top:4px;}
+#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+#placesList .item .info{padding:10px 0 10px 55px;}
+#placesList .info .tel {color:#009900;}
+#placesList .item .markerbg {
+  float:left;
+  position:absolute;
+  width:36px; 
+  height:37px;
+  margin:10px 0 0 10px;
+  background:url(../images/icon/marker.png) no-repeat;
+  background-size: contain;
+}
+#pagination {margin:10px auto;text-align: center;}
+#pagination a {display:inline-block;margin-right:10px;}
+#pagination .on {font-weight: bold; cursor: default;color:#777;}
+
+#placesList .item:hover {
+  background-color: rgba(78, 56, 54, 0.3);
+}
+
+/* section-news */
+#news { 
+  width: 100%; 
+  text-align: left;
+  overflow: hidden;
+}
+.slide-container {
+  width: 200%;
+  height: 300px;
+  float: left;
+}
+#news > div > article {
+  display: inline-block;
+  height: 300px;
+  width: 500px;
+  margin: 0 10px;
+  background-color: #F8F4F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+div.before,
+div.after {
+  display: inline-block;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+}
+div.before {
+  margin-left: 30vw;
+}
+
+/* section-article */
+#news > article {
+  position:relative; 
+  display: table;
+  width: 100%;
+  margin-top: 50px;
+}
+.cover_sentence {
+  color: #F8F4F3;
+  vertical-align: middle;
+  width: 100%;
+  height: 290px;
+  line-height: 100px;
+  background-image: url(../images/original/cover2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover_sentence > h1 {
+  font-size: 3vw;
+  line-height: 1.2;
+  padding: 0 20px 0 50px;
+  display: table-cell;
+  vertical-align:middle;
+}
+.cover_sentence > p {
+  display: inline-block;
+  line-height: 1.2;
+  display: table-cell;
+  vertical-align:middle;
+}
+#news > article > button {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  z-index: 3;
+  background-color: transparent;
+  padding: 40px;
+  margin-right: 50px;
+}
+#news > article > button:hover {
+  background-color: #f8f4f381;
+}
