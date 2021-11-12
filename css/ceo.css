@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+section {
+  padding: 5% 0 10%;
+}
+section :not(h1) {
+  text-align: left;
+}
+.ceo-img {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+.ceo-message {
+  float: right;
+  left: -55%;
+  position: relative;
+}
+.ceo-message > h2 {
+  font-size: 4vw;
+  line-height: .9;
+  font-weight: normal;
+  color: #097EB6;
+  padding: 150px 0 50px 0;
+}
+.ceo-message > h2 > span:nth-child(1) {
+  font-weight: bold;
+}
+.ceo-message > p {
+  font-size: 20px;
+}
+.ceo-message > p:nth-of-type(2) {
+  padding-top: 50px;
+}
+.ceo-greeting {
+  margin: 0 auto;
+  padding: 50px;
+  width: 70%;
+}
+.frame {
+  position: relative;
+}
+.frame > i {
+  position: absolute;
+  color: #097EB6;
+}
+.frame > i:nth-of-type(1) { 
+  top: -50%;
+  left: 0;
+}
+.frame > i:nth-of-type(2) { 
+  bottom: -50%;
+  right: 0;
+}
+.frame::after,
+.frame::before {
+  content: '';
+  display: block;
+  width: 70%;
+  height: 250px;
+  border: 20px double #097EB6;
+  position: absolute;
+}
+.frame::before {
+  border-right: 0;
+  border-top: 0;
+  left: 0;
+  top: 0;
+}
+.frame::after {
+  border-left: 0;
+  border-bottom: 0;
+  right: 0;
+  bottom: 0%;
+}
