@@ -7,6 +7,7 @@
   <title>찾아오시는길 | 중부발전서비스</title>
   <link rel="stylesheet" href="../../css/common.css">
   <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="../../css/pages/location.css">
 </head>
 <body>
   <header>
@@ -31,7 +32,7 @@
                 <li><a href="./ceo-greeting.html">CEO인사말</a></li>
                 <li><a href="./history.html">회사 개요</a></li>
                 <li><a href="./organization.html">조직도</a></li>
-                <li><a href="">찾아오시는길</a></li>
+                <li><a href="./location.html">찾아오시는길</a></li>
               </ul>
             </li>
             <li><a href="../service.html" onclick="openMenu()">사업분야</a>
@@ -56,8 +57,71 @@
       <div class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></div>
       </div>
   </header>
-
-  <main></main>
+  <main>
+    <section>
+      <div class="map-box">
+        <h1>찾아오시는 길</h1>
+        <div id="map"></div>
+        <div class="address">
+          <span>
+            <i class="fas fa-home"></i>
+            <address>충청남도 보령시 대해로 68</address>
+          </span>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+          041-936-****</p>
+        </div>
+      </div>
+      <div class="public-box overflow">
+        <div class="head-img">
+          <img src="../../images/original/komipo-head.png" alt="head office">
+        </div>
+        <div class="public">
+          <h2>
+            <i class="fas fa-bus"></i>
+            대중교통으로 오실 경우
+          </h2>
+          <div>
+            <ul>
+              <li>보령종합터미널 198m
+                <ul class="bus">
+                  <li>일반100</li>
+                  <li>일반101</li>
+                  <li>일반102</li>
+                  <li>일반103-1</li>
+                  <li>일반900</li>
+                </ul>
+              </li>
+              <li>SK아파트 262m
+                <ul class="bus">
+                  <li>일반100</li>
+                  <li>일반101</li>
+                  <li>일반102</li>
+                  <li>일반103</li>
+                  <li>일반103-1</li>
+                  <li>일반105</li>
+                  <li>일반107-1</li>
+                  <li>일반900</li>
+                </ul>
+              </li>
+              <li>SK아파트 279m
+                <ul class="bus">
+                  <li>일반100</li>
+                  <li>일반101</li>
+                  <li>일반102</li>
+                  <li>일반103</li>
+                  <li>일반103-1</li>
+                  <li>일반104</li>
+                  <li>일반105</li>
+                  <li>일반107</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
     <div>
       <div class="footer-logo">
@@ -73,7 +137,7 @@
               <li><a href="./ceo-greeting.html">CEO인사말</a></li>
               <li><a href="./history.html">회사 개요</a></li>
               <li><a href="./organization.html">조직도</a></li>
-              <li><a href="">찾아오시는길</a></li>
+              <li><a href="./location.html">찾아오시는길</a></li>
             </ul>
           </li>
           <li><a href="../service.html">사업분야</a>
@@ -98,5 +162,7 @@
   </footer>
 
   <script src="../../js/common.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
+  <script src="../../js/pages/location.js"></script>
 </body>
 </html>

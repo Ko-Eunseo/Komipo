@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+#map {
+  width: 80%;
+  height: 30vw;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.address {
+  width: 100%;
+  background-color: white;
+  padding: 40px;
+  margin: 50px 0;
+}
+.address > span > address {
+  display: inline-block;
+  padding-right: 10vw;
+}
+.address > p {
+  display: inline-block;
+  padding: 30px 0 30px 10vw;
+}
+
+.public-box {
+  margin: 100px 0;
+}
+.head-img {
+  position: relative;
+  float: right;
+  left: -50%;
+  /* width: 30%; */
+}
+.head-img img {
+  width: 100%;
+}
+.public {
+  position: relative;
+  float: left;
+  left: 50%;
+  padding: 0 20px 50px;
+}
+.public > div > ul > li {
+  float: left;
+  padding: 20px;
+  font-size: 1.2vw;
+  position: relative;
+}
+.bus {
+  font-size: 16px;
+  position: absolute;
+  transform: translate(-50%);
+  top: 80%;
+  left: 50%;
+  border-left: 5px solid salmon;
+}
+.bus > li {
+  padding: 5px 3px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+.bus > li::before {
+  content:'';
+  width: 5px;
+  height: 5px;
+  display: block;
+  background-color: white;
+  border: 5px solid salmon;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%s,-50%);
+  left: -20%;
+  top: 20%;
+}
