@@ -1,0 +1,30 @@
+@charset "utf-8";
+section {
+  min-height: 80vh;
+}
+section > div > div {
+  display: inline-block;
+  width: 10%;
+  min-height: 30vh;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 10px;
+}
+
+section > div > div > h2 {
+  line-height: 5vw;
+  height: 100px;
+}
+section > div > div:nth-child(1) > h2 { background-color: #F7B36F;}
+section > div > div:nth-child(2) > h2 { background-color: #ACCB5A;}
+section > div > div:nth-child(3) > h2 { background-color: #449465;}
+section > div > div:nth-child(4) > h2 { background-color: #F7B36F;}
+section > div > div:nth-child(5) > h2 { background-color: #ACCB5A;}
+
+section > div > div > p {
+  min-height: 10vw;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  padding-top: 20%;
+}

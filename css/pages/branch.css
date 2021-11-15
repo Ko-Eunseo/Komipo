@@ -95,3 +95,27 @@ th, td {
   border: 1px solid #f1f1f1;
   padding: 20px 4vw;
 }
+
+#jungbu {
+  padding-bottom: 100px; 
+}
+#jungbu .jb-wraper > div {
+  position: relative;
+  display: inline-block;
+}
+#jungbu .jb-wraper > div img {
+  height: 400px;
+}
+#jungbu h3 {
+  padding: 10%;
+  position: absolute;
+  top: 0;
+  line-height: 200px;
+  background-color: #f1f1f16e;
+}
+#jungbu .jb-wraper > div:nth-child(odd) h3 {
+  left: 0;
+}
+#jungbu .jb-wraper > div:nth-child(even) h3 {
+  right: 0;
+}

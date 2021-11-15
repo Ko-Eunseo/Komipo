@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
   <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/pages/branch.css">
-  <title>발전소소개 | 중부발전서비스</title>
+  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="../../css/pages/talent.css">
+  <title>인재상 | 중부발전서비스</title>
 </head>
 <body>
   <header>
@@ -27,17 +27,17 @@
         <span class="close" onclick="openNcloseNav()"><i class="fas fa-times"></i></span>
         <nav class="gnb">
           <ul>
-            <li><a href="">회사소개</a>
+            <li><a href="" onclick="openMenu()">회사소개</a>
               <ul>
-                <li><a href="../../ceo-greeting.html">CEO인사말</a></li>
-                <li><a href="../../history.html">회사 개요</a></li>
-                <li><a href="../../organization.html">조직도</a></li>
+                <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+                <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+                <li><a href="../../pages/introduce/organization.html">조직도</a></li>
                 <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
               </ul>
             </li>
-            <li><a href="../service.html">사업분야</a>
+            <li><a href="../../service.html" onclick="openMenu()">사업분야</a>
             </li>
-            <li><a href="">사업소현황</a>
+            <li><a href="" onclick="openMenu()">사업소현황</a>
               <ul>
                 <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
                 <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
@@ -63,50 +63,35 @@
       </div>
   </header>
   <main>
-    <section id="jungbu">
-      <h1>중부발전서비스 발전소소개</h1>
-      <div class="jb-wraper">
+    <section>
+      <h1>인재상</h1>
+      <div class="overflow">
         <div>
-          <a href="../../pages/branch/boryeong.html">
-            <img src="../../images/original/branch/br/br.png" alt="">
-            <h3>보령발전본부</h3>
-          </a>
+          <img src="../../images/icon/talent/image 97.png" alt="">
+          <h2>RESPONSIBILITY</h2>
+          <p>책임감 있는 주인의식을 바탕으로 회사의 발전을 함께하고 발맞춰 나아가는 인재</p>
         </div>
         <div>
-          <a href="../../pages/branch/incheon.html">
-            <img src="../../images/original/branch/ic/인천.png" alt="">
-            <h3>인천발전본부</h3>
-          </a>
+          <img src="../../images/icon/talent/image 98.png" alt="">
+          <h2>ORDER</h2>
+          <p>공동체 생활에 있어 질서와 절제를 존중하고
+            명예와 품위를 지키며 모든 일에 항상 정도를
+            추구하는 인재</p>
         </div>
         <div>
-          <a href="../../pages/branch">
-            <img src="../../images/original/branch/jj/제주.png" alt="">
-            <h3>제주발전본부</h3>
-          </a>
+          <img src="../../images/icon/talent/image 99.png" alt="">
+          <h2>RESPECT</h2>
+          <p>상호존중 자세를 기반으로 고객에 대한 배려심과 친절함을 행동으로 실현하는 인재</p>
         </div>
         <div>
-          <a href="../../pages/branch/sejong.html">
-            <img src="../../images/original/branch/sj/세종.png" alt="">
-            <h3>세종발전본부</h3>
-          </a>
+          <img src="../../images/icon/talent/image 100.png" alt="">
+          <h2>COMBINATION</h2>
+          <p>동료간 화합에 힘쓰며 사우들과 원만한 관계를 유지하고 협력하는 인재</p>
         </div>
         <div>
-          <a href="../../pages/branch/seoul.html">
-            <img src="../../images/original/branch/su/서울.png" alt="">
-            <h3>서울발전본부</h3>
-          </a>
-        </div>
-        <div>
-          <a href="../../pages/branch/sinboryeong.html">
-            <img src="../../images/original/branch/sbr/신보령.png" alt="">
-            <h3>신보령발전본부</h3>
-          </a>
-        </div>
-        <div>
-          <a href="../../pages/branch/sinseocheon.html">
-            <img src="../../images/original/branch/ssc/신서천.png" alt="">
-            <h3>신서천발전본부</h3>
-          </a>
+          <img src="../../images/icon/talent/image 96.png" alt="">
+          <h2>VALUE</h2>
+          <p>건전한 가치관과 윤리의식을 가지고 주어진 소임을 다하는 인재</p>
         </div>
       </div>
     </section>
@@ -114,7 +99,7 @@
   <footer>
     <div>
       <div class="footer-logo">
-        <img src="../images/icon/komipo-footer.png" alt="">
+        <img src="../../images/icon/komipo-footer.png" alt="">
         <h3>사업장소재지</h3>
         <p>TEL</p>
         <p>FAX</p>
@@ -145,7 +130,6 @@
           </li>
           <li><a href="">알림마당</a>
             <ul>
-              <li><a href="">채용공고</a></li>
               <li><a href="">알림마당</a></li>
               <li><a href="">각종 규정</a></li>
             </ul>
