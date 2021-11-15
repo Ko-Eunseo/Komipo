@@ -110,27 +110,6 @@
 }
 
 /* table */
-table {
-  border-top: 4px solid #05415e98;
-  margin: 30px auto 100px;
-  border-collapse: collapse;
-}
-thead {
-  background-color: #aaaaaa3f;
-  border-bottom: 2px solid #f1f1f1;
-}
-th, td {
-  border: 1px solid #f1f1f1;
-  padding: 20px;
-}
-th:first-child,
-td:first-child {
-  border-left: 0;
-}
-th:last-child,
-td:last-child {
-  border-right: 0;
-}
 .dot li {
   position: relative;
   text-align: left;
