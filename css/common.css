@@ -108,6 +108,9 @@ header > div.headerIcon > div.open {
   left: 40%;
   padding-left: 5%;
 }
+#gnbBox ul > li:last-child ul {
+  bottom: 0; /*hover 공간 확보*/
+}
 
 /* hover시 부메뉴 open */
 #gnbBox ul li:hover ul {

@@ -66,6 +66,9 @@ main > h1 {
   top: -20px;
   right: 10px;
 }
+#seoul > .cover > h1 {
+  bottom: 25% !important;
+}
 #jeju .award {
   padding: 40px;
 }
