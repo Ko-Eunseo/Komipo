@@ -9,14 +9,15 @@
   overflow: hidden;
   padding-top: 20px;
   height: 100vh;
-  /* 반응형 적용할것 */
 }
-#service h1 { padding: 20px 0;}
+#service h1 { 
+  padding: 20px 0;
+  margin: 50px 0;
+}
 
 .serviceContents div {
   display: inline-block;
 }
-
 
 /* contents layout */
 #service > div.layout {
@@ -32,7 +33,7 @@
 
 #service .serviceContents > div:nth-child(1) .circle { border-color: #59808C;}
 #service .serviceContents > div:nth-child(2) .circle { border-color: #42C5A3;}
-#service .serviceContents > div:nth-child(3) .circle { border-color: #06ADB2; }
+#service .serviceContents > div:nth-child(3) .circle { border-color: #06ADB2;}
 #service .serviceContents > div:nth-child(4) .circle { border-color: #097EB6;}
 #service .serviceContents > div:nth-child(5) .circle { border-color: #5D8B70;}
 
@@ -48,70 +49,34 @@
 
 #service .serviceContents > div > .service-detail {
   position: absolute;
-  width: 300px;
-  bottom: -150px;
+  top: 350px;
   left: 0;
   padding: 10px;
-  border: 10px solid #59808C;
   border-radius: 20px;
 }
-#service .serviceContents > div:nth-child(2) > .service-detail {
-  border-color: #42C5A3;
-}
-/* hover:visible */
-.serviceContents > div > .service-cover:hover~.triangle {
-  display: inline-block;
-}
-.service-detail.triangle {
-  position: relative;
-  display: none;
-}
-.triangle:after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid #59808C;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  position: absolute;
-  top: -29px;
-}
-#service div.environment > .triangle {
-  bottom: 50px;
-  left: 110%;
-}
-
-#service div.environment > .triangle:after { 
-  /* border-bottom-color: #42C5A3; */
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #42C5A3;
-  left: -10.5%;
-  top: 30%;
-}
-#service div.fire > .triangle:after { border-bottom-color: #06ADB2;}
-#service div.facility > .triangle:after { border-bottom-color: #097EB6;}
-#service div.promotion > .triangle:after { border-bottom-color: #5D8B70;}
-
-#service .serviceContents > div.fire > .service-detail {
-  border-color: #06ADB2;
-}
-#service .serviceContents > div.facility > .service-detail {
-  border-color: #097EB6;
-}
-#service .serviceContents > div.promotion > .service-detail {
-  border-color: #5D8B70;
+#service .serviceContents > div.environment > div.service-detail {
+  top: -200px;
+  left: 0;
 }
 #service button {
-  margin: 0 50px;
-  float: right;
+  bottom: 0;
+  right: -38%;
 }
+#service h3 {
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+#service .serviceContents > div:nth-child(1) > .service-detail > h3 {color: #59808C;}
+#service .serviceContents > div:nth-child(2) > .service-detail > h3 {color: #42C5A3;}
+#service .serviceContents > div:nth-child(3) > .service-detail > h3 {color: #06ADB2;}
+#service .serviceContents > div:nth-child(4) > .service-detail > h3 {color: #097EB6;}
+#service .serviceContents > div:nth-child(5) > .service-detail > h3 {color: #5D8B70;}
 
 /* second section hire */
 /* layout */
 #hire > div.hireWrap {
-  width: 100%;
-  padding: 0 100px;
+  width: 90%;
+  margin: 0 auto;
   padding-top: 1vw;
 }
 #hire > div.hireWrap > div {
@@ -121,8 +86,8 @@
   width: 300px;
   height: 500px;
   z-index: 1;
-  margin: 0 100px;
-  float: left;
+  display: inline-block;
+  margin: 60px;
 }
 /* color */
 #hire > div.hireWrap > div:nth-child(1) { color: #44ADC0;}
@@ -134,7 +99,7 @@
 .hireWrap > div {position: relative;}
 .ribbon {
   content: '';
-  width: 18vw;
+  width: 300px;
   height: 80px;
   line-height: 80px;
   background-color: orangered;
@@ -342,4 +307,158 @@ div.before {
 }
 #news > article > button:hover {
   background-color: #f8f4f381;
+}
+
+/* responsive */
+@media screen and (min-width: 400px) and (max-width: 630px) {
+  /* contents layout */
+  #service {
+    height: auto;
+  }
+  .circle {
+    width: 100px;
+  }
+  #service .serviceContents {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #service .serviceContents > div:nth-child(1),
+  #service .serviceContents > div:nth-child(2),
+  #service .serviceContents > div:nth-child(3),
+  #service .serviceContents > div:nth-child(4),
+  #service .serviceContents > div:nth-child(5) { 
+    transform: translate(0%, 0%);
+  }
+  .circle { border: 3px solid;}
+  #service .serviceContents > div > .service-detail {
+    /* display: none; */
+    top: 0;
+  }
+  #service .serviceContents > div.environment > div.service-detail {
+    top: 0;
+  }
+  #service .serviceContents > div > .service-detail > h3 {
+    font-size: 1em;
+  }
+  #service .serviceContents > div > .service-detail > p {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 630px) and (max-width: 740px) {
+  /* contents layout */
+  .circle {
+    width: 150px;
+  }
+  #service,
+  #service > div.layout {
+    height: auto;
+  }
+  #service .serviceContents {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #service .serviceContents > div:nth-child(1),
+  #service .serviceContents > div:nth-child(3) { 
+    transform: translate(50%, 0%);
+  }
+  #service .serviceContents > div:nth-child(2) { transform: translate(-150%,50%); }
+
+  #service .serviceContents > div:nth-child(5) {
+    transform: translate(0%, 0%);
+  }
+  #service .serviceContents > div:nth-child(4) { transform: translate(50%,50%); }
+  #service .serviceContents > div > .service-detail {
+    top: 0;
+    left: 20%;
+  }
+  #service .serviceContents > div.environment > div.service-detail {
+    top: 0;
+    left: 0;
+  }
+  #service .serviceContents > div > .service-detail p {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 1029px) {
+  /* contents layout */
+  .circle {
+    width: 180px;
+  }
+  #service .serviceContents {
+    width: 50%;
+    margin: 0 15%;
+  }
+  #service .serviceContents > div:nth-child(1),
+  #service .serviceContents > div:nth-child(3) { transform: translate(50%, 0%); }
+  #service .serviceContents > div:nth-child(2) { transform: translate(-150%,50%); }
+  #service .serviceContents > div:nth-child(4) { transform: translate(50%,70%); }
+  #service .serviceContents > div:nth-child(5) { transform: translate(50%, 70%); }
+  #service .serviceContents > div > .service-detail h3 {
+    font-size: 1.2em;
+  }
+  #service .serviceContents > div > .service-detail {
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
+  #service .serviceContents > div.environment > div.service-detail {
+    top: 100%;
+  }
+  #hire > div.hireWrap > div {
+    width: 500px;
+    height: 300px;
+    padding: 0;
+    margin: 10px auto;
+  }
+  #hire > div.hireWrap > div i {
+    float: left;
+    margin-left: 30px;
+  }
+  #hire > div.hireWrap > div > div {
+    transform: translateY(130%);
+  }
+  #hire > div.hireWrap > div > button {
+  }
+}
+@media screen and (min-width: 1030px) and (max-width: 1279px) {
+  /* contents layout */
+  .circle {
+    width: 200px;
+  }
+  #service .serviceContents > div > .service-detail {
+    width: 15vw;
+  }
+  #service .serviceContents > div.environment > div.service-detail {
+    top: -300px;
+  }
+  #hire > div.hireWrap > div {
+    width: 18vw;
+    height: 400px;
+    margin: 30px;
+  }
+  .ribbon {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1530px) {
+  /* contents layout */
+  .circle {
+    width: 250px;
+  }
+  #service .serviceContents > div > .service-detail {
+    width: 15vw;
+  }
+  #hire > div.hireWrap > div {
+    width: 250px;
+    height: 450px;
+    margin: 30px;
+  }
+  .ribbon {
+    width: 250px;
+  }
 }
