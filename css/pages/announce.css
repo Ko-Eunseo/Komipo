@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+th, td {
+  padding: 20px 5vw;
+}
+
+#announce .search {
+  text-align: right;
+  transform: translate(-20%,20%);
+}
+#announce > .search > label input {
+  text-align: right;
+  padding: 10px;
+  border: 0;
+}
+#announce > .search > label button {
+  width: 50px;
+  border-color: #05405e;
+  color: #05405e;
+}
+#announce button:after {
+  border-color: #05405e;
+}
