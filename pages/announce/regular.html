@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
   <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/pages/branch.css">
-  <title>보령지점 | 중부발전서비스</title>
+  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="../../css/pages/announce.css">
+  <title>각종규정 | 중부발전서비스</title>
 </head>
 <body>
   <header>
@@ -27,17 +27,17 @@
         <span class="close" onclick="openNcloseNav()"><i class="fas fa-times"></i></span>
         <nav class="gnb">
           <ul>
-            <li><a href="">회사소개</a>
+            <li><a href="" onclick="openMenu()">회사소개</a>
               <ul>
-                <li><a href="../../ceo-greeting.html">CEO인사말</a></li>
-                <li><a href="../../history.html">회사 개요</a></li>
-                <li><a href="../../organization.html">조직도</a></li>
+                <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+                <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+                <li><a href="../../pages/introduce/organization.html">조직도</a></li>
                 <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
               </ul>
             </li>
-            <li><a href="../service.html">사업분야</a>
+            <li><a href="../../service.html" onclick="openMenu()">사업분야</a>
             </li>
-            <li><a href="">사업소현황</a>
+            <li><a href="" onclick="openMenu()">사업소현황</a>
               <ul>
                 <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
                 <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
@@ -63,88 +63,38 @@
       <div class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></div>
       </div>
   </header>
-  <main>
-    <section id="boryeong">
-      <h1>국내 최초의 국산화 표준 석탄화력발전소</h1>
-      <div class="cover">
-        <h1>보령발전본부</h1>
-        <img src="../../images/original/branch/br/br.png" alt="boryeong">
-        <p> 국내 전체 전력설비의 3.50%를 차지하는 대규모 발전단지 로 유연탄 화력, LNG복합화력, 태양광, 소수력, 연료전지의 설비를 운영 중이며,
-          <br/>우드펠릿과 유기성 고형연료(하수슬러지)를 화력발전소에서 혼소하는 설비와 습식아민 이산화탄소 포집 설비까지 다양한 설비를 보유한 국내 최고의 종합 발전단지 입니다.
-        </p>
-      </div>
-      <div class="contents overflow">
-        <div class="right">
-          <img src="../../images/original/branch/br/image 76.png" alt="">
-          <img src="../../images/original/branch/br/image 77.png" alt="">
-          <img src="../../images/original/branch/br/image 78.png" alt="">
-        </div>
-        <div class="left">
-          <div>
-            <h2>세계 최고 수준의 발전소 운영능력</h2>
-            <p>국내 최초의 표준석탄화력으로 국내 석탄화력발전소 운영 기술의 효시가 된 3호기는 2018년 3월 6,500일
-              장기 무고장 운전이라는 세계 유례없는 기록을 달성하며, 철저한 설비관리 능력과 운영 기술력의 우수성을
-              대내외에 널리 알리고 있으며, 1996년 미국 전력기술전문지인 electric power international 선정 세계
-              최우수 발전소상을 수상한바 있습니다. 2008년에는 asian power awards 운전정비부문 금상을 수상하였고,
-              2009년에는 미국 power지에서 선정한 2008 coal-fired top plant 친환경 발전소 구현 상을 수상하는 등
-              세계 최고 수준의 운영기술을 인정받고 있습니다.</p>
-            <div class="award overflow">
-              <h3>6,500일
-                <br/>장기무고장운전 달성
-                <br/>2018.03
-              </h3>
-              <h3>
-                미국 POWER사 선정
-                <br/>세계 최우수 발전소 수상
-                <br/>2009.05
-              </h3>
-              <h3>
-                Asian Power awards
-                <br/>운전정비부문 금상 수상
-                <br/>2008.05
-              </h3>
-            </div>
-          </div>
-          <div>
-            <h2>표준석탄화력 친환경개선사업으로
-              <br/>친환경·저탄소·고효율 발전소 구현</h2>
-              <p> 국내 최초 표준석탄화력인 3,4호기는 친환경개선 사업을 통해 발전설비 성능 및 신뢰성을 향상 시키고, 
-                최고수준의 환경설비를 구축하여 2023년에는 2015년 대비 대기오염물질 발생량 80%를 감축할 계획입니다. 
-                또한 2024년까지 3,200억원을 투자하여 현재 운영 중인 모든 옥외 저탄장을 옥내 저탄장으로 교체함으로써 비산먼지를 원천적으로 차단할 예정입니다.</p>
-          </div>
-        </div>
-      </div>
-      <div class="facility">
-        <h2>보령발전본부 설비현황</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>화력</th>
-              <th>복합화력</th>
-              <th>소수력</th>
-              <th>태양광</th>
-              <th>연료전지</th>
-              <th>합계</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>3,050MW</td>
-              <td>1,350MW</td>
-              <td>7.5MW</td>
-              <td>4.109MW</td>
-              <td>7.48MW</td>
-              <td>총 4,419MW</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
+  <section id="announce">
+    <h1>공지사항</h1>
+    <div class="search">
+      <label for="search">
+        <input type="search">
+        <button><i class="fas fa-search"></i></button>
+      </label>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>연번</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>조회수</th>
+            <th>파일</th>
+            <th>작성일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="6">데이터가 없습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
   <footer>
     <div>
       <div class="footer-logo">
-        <img src="../images/icon/komipo-footer.png" alt="">
+        <img src="../../images/icon/komipo-footer.png" alt="">
         <h3>사업장소재지</h3>
         <p>TEL</p>
         <p>FAX</p>
