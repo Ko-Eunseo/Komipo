@@ -125,20 +125,3 @@
   height: 100px;
 }
 
-/* table */
-.dot li {
-  position: relative;
-  text-align: left;
-  padding: 0 20px;
-}
-.dot li::before {
-  content:'';
-  width: 3px;
-  height: 10px;
-  display: block;
-  background-color: #097EB6;
-  border-radius: 50%;
-  position: absolute;
-  top: 30%;
-  left: 0;
-}

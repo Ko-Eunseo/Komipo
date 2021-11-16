@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/pages/apply.css">
+  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <title>입사지원 | 중부발전서비스</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../images/icon/logoKomipo.svg" alt="logo">
+        <h1>Komipo</h1>
+      </a>
+    </div>
+    <div class="headerIcon">
+      <div class="search">
+        <label for="search">
+          <input type="text"><i class="fas fa-search"></i>
+        </label>
+      </div>
+      <div id="gnbBox">
+        <span class="close" onclick="openNcloseNav()"><i class="fas fa-times"></i></span>
+        <nav class="gnb">
+          <ul>
+            <li><a href="" onclick="openMenu()">회사소개</a>
+              <ul>
+                <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+                <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+                <li><a href="../../pages/introduce/organization.html">조직도</a></li>
+                <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="../../service.html" onclick="openMenu()">사업분야</a>
+            </li>
+            <li><a href="" onclick="openMenu()">사업소현황</a>
+              <ul>
+                <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+                <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+                <li><a href="../../pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+                <li><a href="../../pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+                <li><a href="../../pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+                <li><a href="../../pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+                <li><a href="../../pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+                <li><a href="../../pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
+              </ul>
+            </li>
+            <li><a href="">알림마당</a>
+              <ul>
+                <li><a href="../../pages/announce/talent.html">인재상</a></li>
+                <li><a href="../../pages/announce/recruit.html">채용공고</a></li>
+                <li><a href="../../pages/announce/notice.html">공지사항</a></li>
+                <li><a href="../../pages/announce/regular.html">각종 규정</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></div>
+      </div>
+  </header>
+  <main>
+    <section>
+      <form class="overflow">
+        <h1>입사지원</h1>
+        <div class="left dot">
+          <label for="support-areas1">
+            <p class="dot">1지망</p>
+            <input type="text" placeholder="지원직무1">
+          </label>
+          <label for="support-areas2">
+            <p>2지망</p>
+            <input type="text" placeholder="지원직무2">
+          </label>
+          <label for="name">
+            <p>성명</p>
+            <input type="text" placeholder="성명">
+          </label>
+          <label for="cellphone">
+            <p>연락처</p>
+            <input type="tel" placeholder="연락처">
+          </label>
+          <label for="email">
+            <p>이메일</p>
+            <input type="email" placeholder="이메일">
+          </label>
+        </div>
+        <div class="right dot">
+          <label for="image"> 
+            <p>사진</p>
+            <input type="image" src="./../../images/icon/image-placehold.png">
+          </label>
+          <label for="birth">
+            <p>생년월일</p>
+            <input type="date">
+          </label>
+          <label for="flie"> 
+            <p>자기소개서, 경력기술서 등</p>
+            <input type="file">
+          </label>
+        </div>
+      </form>
+      <input type="submit">
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div class="footer-logo">
+        <img src="../../images/icon/komipo-footer.png" alt="">
+        <h3>사업장소재지</h3>
+        <p>TEL</p>
+        <p>FAX</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="">회사소개</a>
+            <ul>
+              <li><a href="../../ceo-greeting.html">CEO인사말</a></li>
+              <li><a href="../../history.html">회사 개요</a></li>
+              <li><a href="../../organization.html">조직도</a></li>
+              <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li><a href="../service.html">사업분야</a>
+          </li>
+          <li><a href="">사업소현황</a>
+            <ul>
+              <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+              <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+              <li><a href="../../pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+              <li><a href="../../pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+              <li><a href="../../pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+              <li><a href="../../pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+              <li><a href="../../pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+              <li><a href="../../pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
+            </ul>
+          </li>
+          <li><a href="">알림마당</a>
+            <ul>
+              <li><a href="../../pages/announce/talent.html">인재상</a></li>
+              <li><a href="../../pages/announce/recruit.html">채용공고</a></li>
+              <li><a href="../../pages/announce/notice.html">공지사항</a></li>
+              <li><a href="../../pages/announce/regular.html">각종 규정</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../js/common.js"></script>
+</body>
+</html>
