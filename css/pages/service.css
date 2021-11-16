@@ -109,3 +109,21 @@ section {
   border-radius: 20px;
   border-bottom: 2px dashed #e5e5e5;
 }
+@media screen and (max-width:1200px){
+  .service-detail-page .service-detail > div {
+    border-right: 0;
+  }
+  #service > div.service-detail-page > div.serviceContents > div {
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width:1500px){
+  .service-detail-page .circle {
+    position: unset;
+  }
+  .service-detail-page > .serviceContents > div > div.service-cover {
+    display: inline-block;
+    border-radius: 100%;
+  }
+}
