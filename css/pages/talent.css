@@ -1,6 +1,7 @@
 @charset "utf-8";
 section {
   min-height: 80vh;
+  padding-bottom: 100px;
 }
 section > div > div {
   display: inline-block;
@@ -12,19 +13,38 @@ section > div > div {
 }
 
 section > div > div > h2 {
-  line-height: 5vw;
   height: 100px;
+  color: white;
 }
-section > div > div:nth-child(1) > h2 { background-color: #F7B36F;}
-section > div > div:nth-child(2) > h2 { background-color: #ACCB5A;}
-section > div > div:nth-child(3) > h2 { background-color: #449465;}
-section > div > div:nth-child(4) > h2 { background-color: #F7B36F;}
-section > div > div:nth-child(5) > h2 { background-color: #ACCB5A;}
+section > div > div:nth-child(1) > h2 { background: linear-gradient(70deg, #F7B36F, #ACCB5A);}
+section > div > div:nth-child(2) > h2 { background: linear-gradient(70deg, #ACCB5A, #449465);}
+section > div > div:nth-child(3) > h2 { background: linear-gradient(70deg, #449465 ,#F7B36F);}
+section > div > div:nth-child(4) > h2 { background: linear-gradient(70deg, #F7B36F, #ACCB5A);}
+section > div > div:nth-child(5) > h2 { background: linear-gradient(70deg, #ACCB5A, #449465);}
 
 section > div > div > p {
-  min-height: 10vw;
+  min-height: 25vh;
   margin: 10px 0;
   padding: 10px;
   border: 1px solid #c4c4c4;
   padding-top: 20%;
+}
+
+@media screen and (max-width:649px) {
+  section > div > div {
+    width: 50%;
+  }
+  section > div > div > p {
+    height: auto;
+  }
+}
+@media screen and (min-width:650px) and (max-width:1500px) {
+  section > div > div {
+    width: 40%;
+  }
+}
+@media screen and (min-width:1500px) and (max-width:1700px) {
+  section > div > div {
+    width: 30%;
+  }
 }
