@@ -19,7 +19,6 @@
 #org > .third-fl > ul,
 #org > .second-fl {
   display: inline-block;
-  margin: 20px auto;
 }
 #org > .third-fl {
   padding-bottom: 150px; /*li 짤림방지*/
@@ -55,7 +54,24 @@
 #org > .third-fl > ul > li > ul > li {
   padding-bottom: 10px;/*li 짤림 방지*/
 }
-
+@media screen and (max-width: 850px) {
+  #org {
+    display: none;
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+  #org > .third-fl > ul > li > ul {
+    display: none;
+  }
+  #org > .third-fl > ul > li:last-child > ul {
+    left: 0;
+    right: -30%;
+    top: 100%;
+  }
+  #org > .third-fl > ul > li:hover > ul {
+    display: block;
+  }
+}
 /* circle */
 .circle {
   position: relative;
