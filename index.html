@@ -151,7 +151,7 @@
   <section id="hire">
     <h1>채용공고</h1>
     <div class="hireWrap">
-      <div>
+      <div onclick="location.href='./pages/announce/talent.html'">
         <h3 class="ribbon">인재상</h3>
         <i class="fas fa-balance-scale fa-4x"></i>
         <div>
@@ -159,9 +159,9 @@
           <p>#VALUE</p>
           <p>#COMBINATION</p>
         </div>
-        <button>더보기</button>
+        <!-- <button>더보기</button> -->
       </div>
-      <div>
+      <div onclick="location.href='./pages/announce/recruit.html'">
         <h3 class="ribbon">공개채용</h3>
         <i class="fas fa-handshake fa-4x"></i>
         <div>
@@ -169,9 +169,9 @@
           <p>#공개채용</p>
           <p>#공개채용</p>
         </div>
-        <button>더보기</button>
+        <!-- <button>더보기</button> -->
       </div>
-      <div>
+      <div onclick="location.href='./pages/announce/apply.html'">
         <h3 class="ribbon">입사지원</h3>
         <i class="far fa-file-alt fa-4x"></i>
         <div>
@@ -179,7 +179,7 @@
           <p>#입사지원</p>
           <p>#입사지원</p>
         </div>
-        <button>더보기</button>
+        <!-- <button>더보기</button> -->
       </div>
     </div>
   </section>
@@ -204,9 +204,9 @@
       </div>
     </article>
   </section>
-  <section id="news">
+  <section id="news" class="overflow">
     <h1>News</h1>
-    <div class="slide-container news-container">
+    <div class="news-container">
       <article class="">
         <h3 class="title"></h3>
         <div class="description"></div>
@@ -224,8 +224,6 @@
         <div class="description"></div>
       </article>
     </div>
-    <div class="before"><i class="fas fa-chevron-left"></i></div>
-    <div class="after"><i class="fas fa-chevron-right"></i></div>
     <article>
       <div class="cover_sentence">
         <h1>
@@ -243,8 +241,10 @@
       <div class="footer-logo">
         <img src="./images/icon/komipo-footer.png" alt="">
         <h3>사업장소재지</h3>
-        <p>TEL</p>
-        <p>FAX</p>
+        <div>
+          <p>TEL</p>
+          <p>FAX</p>
+        </div>
       </div>
       <nav class="footer-nav">
         <ul>

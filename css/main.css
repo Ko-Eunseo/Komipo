@@ -78,6 +78,7 @@
   width: 90%;
   margin: 0 auto;
   padding-top: 1vw;
+  cursor: pointer;
 }
 #hire > div.hireWrap > div {
   background-color: #E5E5E5;
@@ -237,14 +238,18 @@
 #news { 
   width: 100%; 
   text-align: left;
-  overflow: hidden;
 }
-.slide-container {
-  width: 200%;
-  height: 300px;
-  float: left;
+.news-container {
+  height: 350px;
+  white-space: nowrap;
+  overflow-x: scroll;
 }
-#news > div > article {
+.news-container::-webkit-scrollbar-thumb{
+  height: 17%;
+  background-color: rgba(33,133,133,1);
+  border-radius: 10px;  
+}
+#news > .news-container > article {
   display: inline-block;
   height: 300px;
   width: 500px;
@@ -293,6 +298,7 @@ div.before {
 .cover_sentence > p {
   display: inline-block;
   line-height: 1.2;
+  font-size: 1vw;
   display: table-cell;
   vertical-align:middle;
 }
@@ -343,7 +349,37 @@ div.before {
   #service .serviceContents > div > .service-detail > p {
     display: none;
   }
-
+  #hire > div.hireWrap > div {
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    margin: 10px auto;
+  }
+  #hire i {
+    float: left;
+    padding-top: 100px;
+    margin-left: 30px;
+  }
+  #hire > div.hireWrap > div > div {
+    transform: translateY(80%);
+  }
+  .ribbon {
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(-150%);
+  }
+  .map_wrap {
+    width: 50vw;
+    height: 50vw;
+  }
+  #map,
+  #menu_wrap {
+    width: 50vw;
+    height: 50vw;
+  }
+  #news > article > button {
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 630px) and (max-width: 740px) {
@@ -380,7 +416,34 @@ div.before {
   #service .serviceContents > div > .service-detail p {
     display: none;
   }
-
+  #hire > div.hireWrap > div {
+    width: 400px;
+    height: 200px;
+    padding: 0;
+    margin: 10px auto;
+  }
+  #hire i {
+    float: left;
+    padding-top: 100px;
+    margin-left: 30px;
+  }
+  #hire > div.hireWrap > div > div {
+    transform: translateY(50%);
+  }
+  .ribbon {
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(-150%);
+  }
+  .map_wrap {
+    width: 50vw;
+    height: 50vw;
+  }
+  #map,
+  #menu_wrap {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 @media screen and (min-width: 740px) and (max-width: 1029px) {
@@ -410,18 +473,31 @@ div.before {
   }
   #hire > div.hireWrap > div {
     width: 500px;
-    height: 300px;
+    height: 200px;
     padding: 0;
     margin: 10px auto;
   }
-  #hire > div.hireWrap > div i {
+  #hire i {
     float: left;
+    padding-top: 100px;
     margin-left: 30px;
   }
   #hire > div.hireWrap > div > div {
-    transform: translateY(130%);
+    transform: translateY(50%);
   }
-  #hire > div.hireWrap > div > button {
+  .ribbon {
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(-150%);
+  }
+  .map_wrap {
+    width: 50vw;
+    height: 50vw;
+  }
+  #map,
+  #menu_wrap {
+    width: 50vw;
+    height: 50vw;
   }
 }
 @media screen and (min-width: 1030px) and (max-width: 1279px) {
@@ -461,4 +537,5 @@ div.before {
   .ribbon {
     width: 250px;
   }
+
 }
