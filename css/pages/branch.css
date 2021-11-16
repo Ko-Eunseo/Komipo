@@ -7,18 +7,17 @@ main > h1 {
   position: relative;
 }
 .cover > h1 {
-  background-color: #dddd;
+  background: linear-gradient(70deg, #64c58c, #097EB6);
   position: absolute;
-  bottom: 20%;
   right: 15%;
   padding: 15px 25px;
 }
 .cover > p {
-  padding: 10px 0;
+  padding: 10px;
   background-color: white;
 }
 .contents {
-  padding: 50px;
+  padding: 50px 0;
 }
 .contents h2 {
   padding: 20px;
@@ -42,10 +41,11 @@ main > h1 {
 }
 .award {
   padding: 40px 5%;
+  margin: 0 auto;
 }
 .award h3 {
   border: 5px double gold;
-  background: linear-gradient(70deg, #5D8B70, #097EB6);
+  background: linear-gradient(70deg, #64c58c, #097EB6);
   float: left;
   padding: 10px;
   margin-left: 10px;
@@ -66,9 +66,6 @@ main > h1 {
   top: -20px;
   right: 10px;
 }
-#seoul > .cover > h1 {
-  bottom: 25% !important;
-}
 #jeju .award {
   padding: 40px;
 }
@@ -84,12 +81,22 @@ main > h1 {
   width: 30%;
   left: 60%;
 }
+@media screen and (max-width: 1200px) {
+  #jeju .contents .left,
+  #jeju .contents .right {
+    width: auto;
+    left: 0;
+  }
+}
 #sibboryeong .award {
   padding: 40px 4%;
 }
 #sinseocheon .contents div {
-  width: 85%;
   margin: 20px auto;
+}
+#sinseocheon .contents div p {
+  width: 90%;
+  margin: 0 auto;
 }
 th, td {
   border: 1px solid #f1f1f1;
@@ -118,4 +125,20 @@ th, td {
 }
 #jungbu .jb-wraper > div:nth-child(even) h3 {
   right: 0;
+}
+@media screen and (max-width: 1200px) {
+  .contents .right {
+    float: unset;
+    position: unset;
+    width: auto;
+  }
+  .contents .left {
+    float: unset;
+    position: unset;
+    width: auto;
+  }
+  .contents .right p,
+  .contents .left p {
+    padding: 20px;
+  }
 }
