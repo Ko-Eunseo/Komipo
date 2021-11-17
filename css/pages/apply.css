@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+form {
+  width: 100%;
+  margin: 50px auto;
+  padding-bottom: 30px; 
+  border-radius: 30px;
+}
+label {
+  display: block;
+  margin: 10px;
+  text-align: left;
+}
+input {
+  border: 0;
+  padding: 10px;
+}
+.left input {
+  width: 200%;
+}
+input[type=submit] {
+  width: 50%;
+  background-color: #449465;
+  cursor: pointer;
+  margin: 30px 0 100px;
+}
+input[type=submit]:hover {
+  background-color: #ACCB5A;
+}
+input[type=image] {
+  width: 150px;
+  height: 170px;
+}
+.dot p {
+  padding: 10px 20px;
+}
+
+/* layout */
+.left {
+  float: right;
+  position: relative;
+  left: -60%;
+}
+.right {
+  float: left;
+  position: relative;
+  left: 55%;
+}
+
+@media screen and (max-width: 700px) {
+  .left {
+    float: unset;
+    position: unset;
+    left: 0;
+  }
+  .right {
+    float: unset;
+    position: unset;
+    left: 0;
+  }
+  .left input {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .left input {
+    width: 150%;
+  }
+  input[type=submit] {
+    width: 90%;
+  }
+}

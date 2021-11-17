@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+main > h1 {
+  text-align: center;
+}
+.cover {
+  position: relative;
+}
+.cover > h1 {
+  background: linear-gradient(70deg, #64c58c, #097EB6);
+  position: absolute;
+  right: 15%;
+  padding: 15px 25px;
+}
+.cover > p {
+  padding: 10px;
+  background-color: white;
+}
+.contents {
+  padding: 50px 0;
+}
+.contents h2 {
+  padding: 20px;
+  border-bottom: 1px solid #5D8B70;
+}
+.contents .right {
+  float: right;
+  position: relative;
+  left: -55%;
+  width: 30%;
+}
+.contents .left {
+  float: left;
+  position: relative;
+  left: 45%;
+  width: 40%;
+}
+.contents p {
+  line-height: 1.5;
+  padding-top: 20px;
+}
+.award {
+  padding: 40px 5%;
+  margin: 0 auto;
+}
+.award h3 {
+  border: 5px double gold;
+  background: linear-gradient(70deg, #64c58c, #097EB6);
+  float: left;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 30px;
+}
+.award h3:nth-child(1) {
+  margin-left: 0;
+}
+.award h3:after {
+  content:'\f521';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: larger;
+  color: gold;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+#jeju .award {
+  padding: 40px;
+}
+#jeju .award h3 {
+  margin: 20px;
+  padding: 20px;
+}
+#jeju .contents .right {
+  width: 40%;
+  left: -50%;
+}
+#jeju .contents .left {
+  width: 30%;
+  left: 60%;
+}
+@media screen and (max-width: 1200px) {
+  #jeju .contents .left,
+  #jeju .contents .right {
+    width: auto;
+    left: 0;
+  }
+}
+#sibboryeong .award {
+  padding: 40px 4%;
+}
+#sinseocheon .contents div {
+  margin: 20px auto;
+}
+#sinseocheon .contents div p {
+  width: 90%;
+  margin: 0 auto;
+}
+th, td {
+  border: 1px solid #f1f1f1;
+  padding: 20px 4vw;
+}
+
+#jungbu {
+  padding-bottom: 100px; 
+}
+#jungbu .jb-wraper > div {
+  position: relative;
+  display: inline-block;
+}
+#jungbu .jb-wraper > div img {
+  height: 400px;
+}
+#jungbu h3 {
+  padding: 10%;
+  position: absolute;
+  top: 0;
+  line-height: 200px;
+  background-color: #f1f1f16e;
+}
+#jungbu .jb-wraper > div:nth-child(odd) h3 {
+  left: 0;
+}
+#jungbu .jb-wraper > div:nth-child(even) h3 {
+  right: 0;
+}
+@media screen and (max-width: 1200px) {
+  .contents .right {
+    float: unset;
+    position: unset;
+    width: auto;
+  }
+  .contents .left {
+    float: unset;
+    position: unset;
+    width: auto;
+  }
+  .contents .right p,
+  .contents .left p {
+    padding: 20px;
+  }
+}

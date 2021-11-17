@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+section {
+  padding: 5% 0 10%;
+}
+section :not(h1) {
+  text-align: left;
+}
+.ceo-img {
+  float: left;
+  position: relative;
+  left: 50%;
+  border: 20px double #097EB6;
+  border-bottom: 0;
+  border-left: 0;
+  padding: 5vw;
+}
+.ceo-img img {
+  width: 30vw;
+}
+.ceo-message {
+  left: 20vw;
+  position: absolute;
+}
+.ceo-message i { 
+  top: 0%;  
+  position: absolute;
+  color: #097EB6;
+  left: -30%;
+}
+.ceo-message > h2 {
+  font-size: 4vw;
+  line-height: .9;
+  font-weight: normal;
+  color: #097EB6;
+  padding: 150px 0 50px 0;
+}
+.ceo-message > h2 > span:nth-child(1) {
+  font-weight: bold;
+}
+.ceo-message > p {
+  font-size: 1.3vw;
+}
+.ceo-message > p:nth-of-type(2) {
+  padding-top: 50px;
+}
+.ceo-greeting {
+  margin: 0 5vw;
+  padding: 50px;
+  width: 70%;
+  position: relative;
+}
+.ceo-greeting p {
+  border: 20px double #097EB6;
+  border-top: 0;
+  border-right: 0;
+  padding: 5vw;
+  font-size: 1vw;
+}
+.ceo-greeting i {
+  position: absolute;
+  color: #097EB6;
+  bottom: 10%;
+  right: -20%;
+}

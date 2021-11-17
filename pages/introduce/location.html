@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>찾아오시는길 | 중부발전서비스</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="../../css/pages/location.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../images/icon/logoKomipo.svg" alt="logo">
+        <h1>Komipo</h1>
+      </a>
+    </div>
+    <div class="headerIcon">
+      <div class="search">
+        <label for="search">
+          <input type="text"><i class="fas fa-search"></i>
+        </label>
+      </div>
+      <div id="gnbBox">
+        <span class="close" onclick="openNcloseNav()"><i class="fas fa-times"></i></span>
+        <nav class="gnb">
+          <ul>
+            <li><a href="">회사소개</a>
+              <ul>
+                <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+                <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+                <li><a href="../../pages/introduce/organization.html">조직도</a></li>
+                <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="../service.html">사업분야</a>
+            </li>
+            <li><a href="">사업소현황</a>
+              <ul>
+                <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+                <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+                <li><a href="../../pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+                <li><a href="../../pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+                <li><a href="../../pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+                <li><a href="../../pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+                <li><a href="../../pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+                <li><a href="../../pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
+              </ul>
+            </li>
+            <li><a href="">알림마당</a>
+              <ul>
+                <li><a href="../../pages/announce/talent.html">인재상</a></li>
+                <li><a href="../../pages/announce/recruit.html">채용공고</a></li>
+                <li><a href="../../pages/announce/notice.html">공지사항</a></li>
+                <li><a href="../../pages/announce/regular.html">각종 규정</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></div>
+      </div>
+  </header>
+  <main>
+    <section>
+      <div class="map-box">
+        <h1>찾아오시는 길</h1>
+        <div id="map"></div>
+        <div class="address">
+          <span>
+            <i class="fas fa-home"></i>
+            <address>충청남도 보령시 대해로 68</address>
+          </span>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+          041-936-****</p>
+        </div>
+      </div>
+      <div class="public-box overflow">
+        <div class="head-img">
+          <img src="../../images/original/komipo-head.png" alt="head office">
+        </div>
+        <div class="public">
+          <h2>
+            <i class="fas fa-bus"></i>
+            대중교통으로 오실 경우
+          </h2>
+          <div>
+            <ul>
+              <li>보령종합터미널 198m
+                <ul class="bus">
+                  <li>일반100</li>
+                  <li>일반101</li>
+                  <li>일반102</li>
+                  <li>일반103-1</li>
+                  <li>일반900</li>
+                </ul>
+              </li>
+              <li>SK아파트 262m
+                <ul class="bus">
+                  <li>일반100</li>
+                  <li>일반101</li>
+                  <li>일반102</li>
+                  <li>일반103</li>
+                  <li>일반103-1</li>
+                  <li>일반105</li>
+                  <li>일반107-1</li>
+                  <li>일반900</li>
+                </ul>
+              </li>
+              <li>SK아파트 279m
+                <ul class="bus">
+                  <li>일반100</li>
+                  <li>일반101</li>
+                  <li>일반102</li>
+                  <li>일반103</li>
+                  <li>일반103-1</li>
+                  <li>일반104</li>
+                  <li>일반105</li>
+                  <li>일반107</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div class="footer-logo">
+        <img src="../../images/icon/komipo-footer.png" alt="">
+        <h3>사업장소재지</h3>
+        <p>TEL</p>
+        <p>FAX</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="">회사소개</a>
+            <ul>
+              <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+              <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+              <li><a href="../../pages/introduce/organization.html">조직도</a></li>
+              <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li><a href="../service.html">사업분야</a>
+          </li>
+          <li><a href="">사업소현황</a>
+            <ul>
+              <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+              <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+              <li><a href="../../pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+              <li><a href="../../pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+              <li><a href="../../pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+              <li><a href="../../pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+              <li><a href="../../pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+              <li><a href="../../pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
+            </ul>
+          </li>
+          <li><a href="">알림마당</a>
+            <ul>
+              <li><a href="../../pages/announce/talent.html">인재상</a></li>
+              <li><a href="../../pages/announce/recruit.html">채용공고</a></li>
+              <li><a href="../../pages/announce/notice.html">공지사항</a></li>
+              <li><a href="../../pages/announce/regular.html">각종 규정</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../js/common.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
+  <script src="../../js/pages/location.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/pages/org.css">
+  <title>조직도 | 중부발전서비스</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../images/icon/logoKomipo.svg" alt="logo">
+        <h1>Komipo</h1>
+      </a>
+    </div>
+    <div class="headerIcon">
+      <div class="search">
+        <label for="search">
+          <input type="text"><i class="fas fa-search"></i>
+        </label>
+      </div>
+      <div id="gnbBox">
+        <span class="close" onclick="openNcloseNav()"><i class="fas fa-times"></i></span>
+        <nav class="gnb">
+          <ul>
+            <li><a href="">회사소개</a>
+              <ul>
+                <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+                <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+                <li><a href="../../pages/introduce/organization.html">조직도</a></li>
+                <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="../service.html">사업분야</a>
+              <ul>
+                <li><a href="">사업분야</a></li>
+              </ul>
+            </li>
+            <li><a href="">사업소현황</a>
+              <ul>
+                <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+                <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+                <li><a href="../../pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+                <li><a href="../../pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+                <li><a href="../../pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+                <li><a href="../../pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+                <li><a href="../../pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+                <li><a href="../../pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
+              </ul>
+            </li>
+            <li><a href="">알림마당</a>
+              <ul>
+                <li><a href="../../pages/announce/talent.html">인재상</a></li>
+                <li><a href="../../pages/announce/recruit.html">채용공고</a></li>
+                <li><a href="../../pages/announce/notice.html">공지사항</a></li>
+                <li><a href="../../pages/announce/regular.html">각종 규정</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></div>
+      </div>
+  </header>
+  <main>
+    <section>
+      <h1>조직도</h1>
+      <div id="org">
+        <div class="first-fl">
+          <p class="circle">CEO</p>
+        </div>
+        <div class="second-fl overflow border">
+          <div class="circle">
+            <p>CEO직할</p>
+            <span>안전</span>
+            <span>보건</span>
+          </div>
+          <div class="circle">
+            <p>본사</p>
+            <span>관리부</span>
+            <span>사업부</span>
+          </div>
+        </div>
+        <div class="third-fl overflow border">
+          <ul>
+            <li class="circle">수도권
+              <ul class="dot">
+                <li>서울사업소</li>
+                <li>인천사업소</li>
+              </ul>
+            </li>
+            <li class="circle">중부권
+              <ul class="dot">
+                <li>보령사업소</li>
+                <li>신서천사업소</li>
+                <li>세종사업소</li>
+                <li>신보령사업소</li>
+                <li>중부본사사업소</li>
+              </ul>
+            </li>
+            <li class="circle">남부권
+              <ul class="dot">
+                <li>제주사업소</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">부서명</th>
+            <th>전화번호</th>
+            <th>주요업무</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="rowspan">안전, 보건</td>
+            <td>안전</td>
+            <td>070-4260-****</td>
+            <td>
+              <ul class="dot">
+                <li>전사 안전관리 업무 총괄</li>
+                <li>연간 안전보건 기본계획 수립 외 산업안전관련 업무</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>보건</td>
+            <td>070-4260-****</td>
+            <td>
+              <ul class="dot">
+                <li>전사보건관리, 작업환경측정 총괄</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="4" class="rowspan">경영관리부</td>
+            <td>세무·회계</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>재무·세무 회계 및 관리회계</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>급여, 복지</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>급여제도 운영 및 관리</li>
+                <li>기타 복지후생 관련 업무</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>인사, 노무</td>
+            <td>070-4260-****</td>
+            <td>
+              <ul class="dot">
+                <li>채용, 승격, 이동, 전환, 상벌, 인사고과 등 직원 인적사항 관련 제반업무</li>
+                <li>단체교섭, 노사협의회, 근로시간면제한도 운영 등 노사관계 제반업무</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>총무, 서무</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>각종 기획업무</li>
+                <li>이사회 등 주주총회(규정개정 등)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="4" class="rowspan">사업지원부</td>
+            <td>환경위생</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>시설물 내외부의 전문적인 유지관리</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>특수경비</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>발전소 내 시설 보호 및 입·출입 통제</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>소방방재</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>발전소 내 화재감시 및 화재 발생 시 초동 진압</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>시설(홍보)</td>
+            <td>070-4247-****</td>
+            <td>
+              <ul class="dot">
+                <li>발전시설 체험교육 및 시설안내</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div class="footer-logo">
+        <img src="../../images/icon/komipo-footer.png" alt="">
+        <h3>사업장소재지</h3>
+        <p>TEL</p>
+        <p>FAX</p>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="">회사소개</a>
+            <ul>
+              <li><a href="../../pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+              <li><a href="../../pages/introduce/history.html">회사 개요</a></li>
+              <li><a href="../../pages/introduce/organization.html">조직도</a></li>
+              <li><a href="../../pages/introduce/location.html">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li><a href="../service.html">사업분야</a>
+          </li>
+          <li><a href="">사업소현황</a>
+            <ul>
+              <li><a href="../../pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+              <li><a href="../../pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+              <li><a href="../../pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+              <li><a href="../../pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+              <li><a href="../../pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+              <li><a href="../../pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+              <li><a href="../../pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+              <li><a href="../../pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
+            </ul>
+          </li>
+          <li><a href="">알림마당</a>
+            <ul>
+              <li><a href="../../pages/announce/talent.html">인재상</a></li>
+              <li><a href="../../pages/announce/recruit.html">채용공고</a></li>
+              <li><a href="../../pages/announce/notice.html">공지사항</a></li>
+              <li><a href="../../pages/announce/regular.html">각종 규정</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+
+  <script src="../../js/common.js"></script>
+</body>
+</html>

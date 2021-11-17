@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,9 @@
   <link rel="stylesheet" href="./library/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 <body>
-<!-- https://www.komipo.kr/ -->
   <header>
     <div class="logo">
-      <a href="#">
+      <a href="./index.html">
         <img src="./images/icon/logoKomipo.svg" alt="logo">
         <h1>Komipo</h1>
       </a>
@@ -30,37 +29,38 @@
           <ul>
             <li><a href="" onclick="openMenu()">회사소개</a>
               <ul>
-                <li><a href="">회사소개</a></li>
-                <li><a href="">회사소개</a></li>
-                <li><a href="">회사소개</a></li>
+                <li><a href="./pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+                <li><a href="./pages/introduce/history.html">회사 개요</a></li>
+                <li><a href="./pages/introduce/organization.html">조직도</a></li>
+                <li><a href="./pages/introduce/location.html">찾아오시는길</a></li>
               </ul>
             </li>
-            <li><a href="" onclick="openMenu()">사업분야</a>
-              <ul>
-                <li><a href="">사업분야</a></li>
-                <li><a href="">사업분야</a></li>
-                <li><a href="">사업분야</a></li>
-              </ul>
+            <li><a href="./pages/service.html" onclick="openMenu()">사업분야</a>
             </li>
             <li><a href="" onclick="openMenu()">사업소현황</a>
               <ul>
-                <li><a href="" onclick="openMenu()">사업소현황</a></li>
-                <li><a href="" onclick="openMenu()">사업소현황</a></li>
-                <li><a href="" onclick="openMenu()">사업소현황</a></li>
+                <li><a href="./pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+                <li><a href="./pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+                <li><a href="./pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+                <li><a href="./pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+                <li><a href="./pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+                <li><a href="./pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+                <li><a href="./pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+                <li><a href="./pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
               </ul>
             </li>
             <li><a href="">알림마당</a>
               <ul>
-                <li><a href="">알림마당</a></li>
-                <li><a href="">알림마당</a></li>
-                <li><a href="">알림마당</a></li>
-                <li><a href="">알림마당</a></li>
+                <li><a href="./pages/announce/talent.html">인재상</a></li>
+                <li><a href="./pages/announce/recruit.html">채용공고</a></li>
+                <li><a href="./pages/announce/notice.html">공지사항</a></li>
+                <li><a href="./pages/announce/regular.html">각종 규정</a></li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
-      <span class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></span>
+      <div class="open" onclick="openNcloseNav()"><i class="fas fa-bars"></i></div>
       </div>
   </header>
   <main>
@@ -89,56 +89,97 @@
     <div class="layout">
       <h1>사업분야</h1>
       <div class="serviceContents">
-        <div>
-          <h3>특수경비</h3>
-          <img class="circle" src="./images/cut/security.png" alt="">
+        <div class="security">
+          <div class="service-cover">
+            <span>
+              <img class="circle" src="./images/cut/security.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail">
+            <h3>Security Team</h3>
+            <p>발전소의 시설보호와 경비구역 내 사고 사전예방 및 관련 사업 수행</p>
+          </div>
         </div>
-        <div>
-          <h3>환경위생</h3>
-          <img class="circle" src="./images/cut/environment.png" alt="">
+        <div class="environment">
+          <div class="service-cover">
+            <span>
+              <img class="circle" src="./images/cut/environment.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail">
+            <h3>Environmental Hygiene</h3>
+            <p>인간과 환경을 생각하는 서비스 제공으로 고객 만족 실현</p>
+          </div>
         </div>
-        <div>
-          <h3>소방방재</h3>
-          <img class="circle" src="./images/cut/fire.png" alt="">
+        <div class="fire">
+          <div class="service-cover">
+            <span>
+              <img class="circle" src="./images/cut/fire.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail">
+            <h3>Fire Prevention</h3>
+            <p>소방시설 점검, 통합관제실 운영 소방시설 최적 유지, 화재 진압 수행</p>
+          </div>
         </div>
-        <div>
-          <h3>시설관리</h3>
-          <img class="circle" src="./images/cut/facility.png" alt="">
+        <div class="facility">
+          <div class="service-cover">
+            <span>
+              <img class="circle" src="./images/cut/facility.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail">
+            <h3>Facility Management</h3>
+            <p>이용자의 편의와 안전을 높이기 위한 전문적인 시설관리업무 수행</p>
+          </div>
         </div>
-        <div>
-          <h3>홍보안내</h3>
-          <img class="circle" src="./images/cut/promotion.png" alt="">
+        <div class="promotion">
+          <div class="service-cover">
+            <span>
+              <img class="circle" src="./images/cut/promotion.png" alt="">
+            </span>
+          </div>
+          <div class="service-detail">
+            <h3>Promotional Guide</h3>
+            <p>발전에너지의 체험중심 교육, 홍보를 통한 이해도 증진업무 수행</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- <button>더보기</button> -->
+    <button onclick="location.href='./service.html'">더보기</button>
   </section>
   <section id="hire">
     <h1>채용공고</h1>
     <div class="hireWrap">
-      <div>
+      <div onclick="location.href='./pages/announce/talent.html'">
         <h3 class="ribbon">인재상</h3>
         <i class="fas fa-balance-scale fa-4x"></i>
-        <p>#RESPONSIBILITY</p>
-        <p>#VALUE</p>
-        <p>#COMBINATION</p>
-        <button>더보기</button>
+        <div>
+          <p>#RESPONSIBILITY</p>
+          <p>#VALUE</p>
+          <p>#COMBINATION</p>
+        </div>
+        <!-- <button>더보기</button> -->
       </div>
-      <div>
+      <div onclick="location.href='./pages/announce/recruit.html'">
         <h3 class="ribbon">공개채용</h3>
         <i class="fas fa-handshake fa-4x"></i>
-        <p>#인재상</p>
-        <p>#인재상</p>
-        <p>#인재상</p>
-        <button>더보기</button>
+        <div>
+          <p>#공개채용</p>
+          <p>#공개채용</p>
+          <p>#공개채용</p>
+        </div>
+        <!-- <button>더보기</button> -->
       </div>
-      <div>
+      <div onclick="location.href='./pages/announce/apply.html'">
         <h3 class="ribbon">입사지원</h3>
         <i class="far fa-file-alt fa-4x"></i>
-        <p>#인재상</p>
-        <p>#인재상</p>
-        <p>#인재상</p>
-        <button>더보기</button>
+        <div>
+          <p>#입사지원</p>
+          <p>#입사지원</p>
+          <p>#입사지원</p>
+        </div>
+        <!-- <button>더보기</button> -->
       </div>
     </div>
   </section>
@@ -163,16 +204,26 @@
       </div>
     </article>
   </section>
-  <section id="news">
+  <section id="news" class="overflow">
     <h1>News</h1>
-    <div class="slide-container">
-      <article>1</article>
-      <article>2</article>
-      <article>3</article>
-      <article>4</article>
+    <div class="news-container">
+      <article class="">
+        <h3 class="title"></h3>
+        <div class="description"></div>
+      </article>
+      <article>
+        <h3 class="title"></h3>
+        <div class="description"></div>
+      </article>
+      <article>
+        <h3 class="title"></h3>
+        <div class="description"></div>
+      </article>
+      <article>
+        <h3 class="title"></h3>
+        <div class="description"></div>
+      </article>
     </div>
-    <div class="before"><i class="fas fa-chevron-left"></i></div>
-    <div class="after"><i class="fas fa-chevron-right"></i></div>
     <article>
       <div class="cover_sentence">
         <h1>
@@ -190,38 +241,41 @@
       <div class="footer-logo">
         <img src="./images/icon/komipo-footer.png" alt="">
         <h3>사업장소재지</h3>
-        <p>TEL</p>
-        <p>FAX</p>
+        <div>
+          <p>TEL</p>
+          <p>FAX</p>
+        </div>
       </div>
       <nav class="footer-nav">
         <ul>
           <li><a href="">회사소개</a>
             <ul>
-              <li><a href="">회사소개</a></li>
-              <li><a href="">회사소개</a></li>
-              <li><a href="">회사소개</a></li>
+              <li><a href="./pages/introduce/ceo-greeting.html">CEO인사말</a></li>
+              <li><a href="./pages/introduce/history.html">회사 개요</a></li>
+              <li><a href="./pages/introduce/organization.html">조직도</a></li>
+              <li><a href="./pages/introduce/location.html">찾아오시는길</a></li>
             </ul>
           </li>
-          <li><a href="">사업분야</a>
-            <ul>
-              <li><a href="">사업분야</a></li>
-              <li><a href="">사업분야</a></li>
-              <li><a href="">사업분야</a></li>
-            </ul>
+          <li><a href="./pages/service.html">사업분야</a>
           </li>
           <li><a href="">사업소현황</a>
             <ul>
-              <li><a href="">사업소현황</a></li>
-              <li><a href="">사업소현황</a></li>
-              <li><a href="">사업소현황</a></li>
+              <li><a href="./pages/branch/jungbu.html" onclick="openMenu()">전국사업소 소개</a></li>
+              <li><a href="./pages/branch/boryeong.html" onclick="openMenu()">보령발전본부</a></li>
+              <li><a href="./pages/branch/incheon.html" onclick="openMenu()">인천발전본부</a></li>
+              <li><a href="./pages/branch/jeju.html" onclick="openMenu()">제주발전본부</a></li>
+              <li><a href="./pages/branch/sejong.html" onclick="openMenu()">세종발전본부</a></li>
+              <li><a href="./pages/branch/seoul.html" onclick="openMenu()">서울발전본부</a></li>
+              <li><a href="./pages/branch/sinboryeong.html" onclick="openMenu()">신보령발전본부</a></li>
+              <li><a href="./pages/branch/sinseocheon.html" onclick="openMenu()">신서천발전본부</a></li>
             </ul>
           </li>
           <li><a href="">알림마당</a>
             <ul>
-              <li><a href="">알림마당</a></li>
-              <li><a href="">알림마당</a></li>
-              <li><a href="">알림마당</a></li>
-              <li><a href="">알림마당</a></li>
+              <li><a href="./pages/announce/talent.html">인재상</a></li>
+              <li><a href="./pages/announce/recruit.html">채용공고</a></li>
+              <li><a href="./pages/announce/notice.html">공지사항</a></li>
+              <li><a href="./pages/announce/regular.html">각종 규정</a></li>
             </ul>
           </li>
         </ul>
@@ -232,5 +286,6 @@
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
 <script src="./js/map.js"></script>
+<script src="./js/news.js"></script>
 </body>
 </html>
