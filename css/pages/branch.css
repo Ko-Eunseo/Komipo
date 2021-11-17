@@ -5,6 +5,10 @@ main > h1 {
 }
 .cover {
   position: relative;
+  width: 100%;
+}
+.cover img {
+  width: 100%;
 }
 .cover > h1 {
   background: linear-gradient(70deg, #64c58c, #097EB6);
@@ -66,6 +70,15 @@ main > h1 {
   top: -20px;
   right: 10px;
 }
+/* div.facility > table {
+  overflow: hidden !important;
+} */
+.scroll {
+  overflow-x: auto;
+}
+table {
+  border-spacing: 0;
+}
 #jeju .award {
   padding: 40px;
 }
@@ -109,22 +122,23 @@ th, td {
 #jungbu .jb-wraper > div {
   position: relative;
   display: inline-block;
+  
 }
 #jungbu .jb-wraper > div img {
-  height: 400px;
+  width: 100%;
 }
 #jungbu h3 {
-  padding: 10%;
+  font-size: 3vw;
+  padding: 3%;
   position: absolute;
   top: 0;
-  line-height: 200px;
-  background-color: #f1f1f16e;
+  background-color: #c9c9c980;
 }
 #jungbu .jb-wraper > div:nth-child(odd) h3 {
-  left: 0;
+  left: 10%;
 }
 #jungbu .jb-wraper > div:nth-child(even) h3 {
-  right: 0;
+  right: 10%;
 }
 @media screen and (max-width: 1200px) {
   .contents .right {
