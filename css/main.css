@@ -267,6 +267,20 @@ div.after {
 div.before {
   margin-left: 30vw;
 }
+#news .news-container article .title {
+  padding: 50px 20px 20px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#news .news-container article .description {
+  padding: 30px 20px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.2;
+}
 
 /* section-article */
 #news > article {
