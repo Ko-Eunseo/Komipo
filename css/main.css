@@ -6,7 +6,6 @@
 }
 
 #service {
-  overflow: hidden;
   padding-top: 20px;
   height: 100vh;
 }
@@ -330,16 +329,15 @@ div.before {
 }
 
 /* responsive */
-@media screen and (min-width: 400px) and (max-width: 630px) {
+@media screen and (min-width: 320px) and (max-width: 630px) {
   /* contents layout */
   #service {
     height: auto;
   }
   .circle {
-    width: 100px;
+    width: 25vw;
   }
   #service .serviceContents {
-    width: 60%;
     margin: 0 auto;
   }
   #service .serviceContents > div:nth-child(1),
@@ -365,31 +363,37 @@ div.before {
   }
   #hire > div.hireWrap > div {
     width: 300px;
-    height: 200px;
+    height: 150px;
     padding: 0;
     margin: 10px auto;
   }
   #hire i {
     float: left;
-    padding-top: 100px;
+    padding-top: 50px;
     margin-left: 30px;
   }
   #hire > div.hireWrap > div > div {
-    transform: translateY(80%);
+    transform: translateY(50%);
+    font-size: 0.9em;
   }
   .ribbon {
     height: 50px;
     line-height: 50px;
-    transform: translateY(-150%);
+    transform: translateY(-220%);
   }
   .map_wrap {
-    width: 50vw;
+    width: 90vw;
     height: 50vw;
+    transform: translate(0);
   }
   #map,
   #menu_wrap {
-    width: 50vw;
+    width: 90vw;
     height: 50vw;
+  }
+  #menu_wrap {
+    position: unset;
+    transform: translate(0);
   }
   #news > article > button {
     padding: 20px;
@@ -439,15 +443,15 @@ div.before {
   #hire i {
     float: left;
     padding-top: 100px;
-    margin-left: 30px;
+    margin-left: 50px;
   }
   #hire > div.hireWrap > div > div {
-    transform: translateY(50%);
+    transform: translateY(70%);
   }
   .ribbon {
     height: 50px;
     line-height: 50px;
-    transform: translateY(-150%);
+    transform: translateY(-180%);
   }
   .map_wrap {
     width: 50vw;
@@ -493,8 +497,8 @@ div.before {
   }
   #hire i {
     float: left;
-    padding-top: 100px;
-    margin-left: 30px;
+    padding-top: 80px;
+    margin-left: 80px;
   }
   #hire > div.hireWrap > div > div {
     transform: translateY(50%);
@@ -502,7 +506,7 @@ div.before {
   .ribbon {
     height: 50px;
     line-height: 50px;
-    transform: translateY(-150%);
+    transform: translateY(-180%);
   }
   .map_wrap {
     width: 50vw;
