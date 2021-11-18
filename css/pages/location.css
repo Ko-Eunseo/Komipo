@@ -65,7 +65,7 @@
   border: 5px solid salmon;
   border-radius: 50%;
   position: absolute;
-  transform: translate(-50%s,-50%);
+  transform: translate(-50%,-50%);
   left: -20%;
   top: 20%;
 }
