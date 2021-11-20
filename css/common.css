@@ -292,12 +292,12 @@ button:hover {
 }
 /* table */
 table {
-  border-top: 4px solid #05415e98;
+  border-top: 4px solid #05415e;
   margin: 30px auto 100px;
   border-collapse: collapse;
 }
 thead {
-  background-color: #aaaaaa3f;
+  background-color: #aaaaaa;
   border-bottom: 2px solid #f1f1f1;
 }
 th, td {
