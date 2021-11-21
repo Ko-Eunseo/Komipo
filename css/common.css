@@ -221,14 +221,41 @@ header > div.headerIcon > div.open {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(5px 5px 5px rgba(71, 69, 69, 0.5));/*for giving shadow with gradient text*/
 }
 .main-headline .headline-box p {
-  padding: 0 15%;
+  color: #E5E5E5;
+  margin-left: 15%;
+  padding: 10px;
+  padding-right: 50px;
   transform: translateY(-100%);
-  /* background-color: #E5E5E5; */
-  background-color: #0272AA;
   display: inline-block;
-  /* 리본모양으로 만들자 */
+  background: linear-gradient(120deg, #5D8B70 0%, #42C5A3 40%, #0272AA 100%);
+  border-radius: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+.main-headline .headline-box p::before {
+  content:'';
+  border: 20px solid #004161;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 0;
+  border-top: 0;
+  border-left: 20px solid transparent;
+}
+.main-headline .headline-box p::after {
+  content: '';
+  border: 34px solid #0272AA;
+  border-left: 0;
+  border-right: 30px solid transparent;
+  width: 50px;
+  height: 0;
+  position: absolute;
+  right: -60px;
+  bottom: -20px;
+  z-index: -1;
 }
 /* content heading */
 h1 { 
