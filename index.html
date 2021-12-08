@@ -20,7 +20,7 @@
     <div class="headerIcon">
       <div class="search">
         <label for="search">
-          <input type="text"><i class="fas fa-search"></i>
+          <input type="text" id="search"><i class="fas fa-search"></i>
         </label>
       </div>
       <div id="gnbBox">
@@ -67,22 +67,36 @@
     <div class="container cover_imgs">
       <ul class="slider-container" id="slider">
         <li class="slide">
-          <img src="./images/original/cover1.png" alt="">
+          <img src="./images/original/cover/cover1.png" alt="">
         </li>
         <li class="slide">
-          <img src="./images/original/cover2.png" alt="">
+          <img src="./images/original/cover/cover2.png" alt="">
         </li>
         <li class="slide">
-          <img src="./images/original/cover3.png" alt="">
+          <img src="./images/original/cover/cover3.png" alt="">
         </li>
       </ul>
-      <p class="pager">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-      </p>
-      <a href="" id="prev"><i class="fas fa-chevron-left"></i></a>
-      <a href="" id="next"><i class="fas fa-chevron-right"></i></a>
+      <div class="main-headline">
+        <div class="headline-box">
+          <h1>KOMIPO
+            <br>SERVICE
+          </h1>
+          <p>삶의 가치를 높이는 글로벌 에너지 리더 다양한 지원업무를 
+            <br> 통하여 에너지 산업을 선도하겠습니다.
+          </p>
+        </div>
+        <div class="control-box">
+          <div class="remote">
+            <a href="" id="prev"><i class="fas fa-chevron-left"></i></a>
+            <a href="" id="next"><i class="fas fa-chevron-right"></i></a>
+          </div>
+          <p class="pager">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+        </p>
+      </div>
     </div>
   </main>
   <section id="service">
@@ -287,6 +301,7 @@
     </div>
   </footer>
 <script src="js/common.js"></script>
+<script src="js/slider.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=486cc4daf0029104dc34c5e6f48e1b62&libraries=services,clusterer,drawing"></script>
 <script src="./js/map.js"></script>

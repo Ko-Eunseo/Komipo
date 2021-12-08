@@ -20,7 +20,7 @@
     <div class="headerIcon">
       <div class="search">
         <label for="search">
-          <input type="text"><i class="fas fa-search"></i>
+          <input type="text" id="search"><i class="fas fa-search"></i>
         </label>
       </div>
       <div id="gnbBox">
@@ -68,43 +68,43 @@
       <form class="overflow">
         <h1>입사지원</h1>
         <div class="left dot">
+          <p class="dot">1지망</p>
           <label for="support-areas1">
-            <p class="dot">1지망</p>
-            <input type="text" placeholder="지원직무1">
+            <input type="text" id="support-areas1" placeholder="지원직무1">
           </label>
+          <p>2지망</p>
           <label for="support-areas2">
-            <p>2지망</p>
-            <input type="text" placeholder="지원직무2">
+            <input type="text" id="support-areas2" placeholder="지원직무2">
           </label>
+          <p>성명</p>
           <label for="name">
-            <p>성명</p>
-            <input type="text" placeholder="성명">
+            <input type="text" id="name" placeholder="성명">
           </label>
+          <p>연락처</p>
           <label for="cellphone">
-            <p>연락처</p>
-            <input type="tel" placeholder="연락처">
+            <input type="tel" id="cellphone" placeholder="연락처">
           </label>
+          <p>이메일</p>
           <label for="email">
-            <p>이메일</p>
-            <input type="email" placeholder="이메일">
+            <input type="email" id="email" placeholder="이메일">
           </label>
         </div>
         <div class="right dot">
+          <p>사진</p>
           <label for="image"> 
-            <p>사진</p>
-            <input type="image" src="./../../images/icon/image-placehold.png">
+            <input type="image" id="image" src="./../../images/icon/image-placehold.png" alt="img">
           </label>
+          <p>생년월일</p>
           <label for="birth">
-            <p>생년월일</p>
-            <input type="date">
+            <input type="date" id="birth">
           </label>
-          <label for="flie"> 
-            <p>자기소개서, 경력기술서 등</p>
-            <input type="file">
+          <p>자기소개서, 경력기술서 등</p>
+          <label for="files"> 
+            <input type="file" id="files">
           </label>
         </div>
       </form>
-      <input type="submit">
+      <input type="submit" id="submit">
     </section>
   </main>
   <footer>
